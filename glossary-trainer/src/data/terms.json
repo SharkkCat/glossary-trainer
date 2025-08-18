@@ -1,100 +1,1505 @@
 [
   {
     "id": "term_001",
-    "categoryId": "hardware",
-    "term": "PCB",
-    "definition": "Printed Circuit Board - connects electronic components",
-    "example": "The PCB layout affects signal integrity"
+    "categoryId": "arvr_display_optics",
+    "term": "Micro-OLED display",
+    "chinese": "微型有机发光二极管",
+    "pinyin": "wēi xíng yǒu jī fā guāng èr jí guǎn",
+    "definition": "微型有机发光二极管 (wēi xíng yǒu jī fā guāng èr jí guǎn)",
+    "notes": "Current state-of-the-art"
   },
   {
     "id": "term_002",
-    "categoryId": "hardware",
-    "term": "GPIO",
-    "definition": "General Purpose Input/Output - configurable digital signal pins",
-    "example": "GPIO pins can control LEDs or read sensor data"
+    "categoryId": "arvr_display_optics",
+    "term": "Waveguide",
+    "chinese": "波导",
+    "pinyin": "bō dǎo",
+    "definition": "波导 (bō dǎo)",
+    "notes": "Critical optical component"
   },
   {
     "id": "term_003",
-    "categoryId": "hardware",
-    "term": "ADC",
-    "definition": "Analog-to-Digital Converter - converts analog signals to digital values",
-    "example": "The ADC reads the analog voltage from the temperature sensor"
+    "categoryId": "arvr_display_optics",
+    "term": "Diffractive waveguide",
+    "chinese": "衍射波导",
+    "pinyin": "yǎn shè bō dǎo",
+    "definition": "衍射波导 (yǎn shè bō dǎo)",
+    "notes": "Uses diffraction gratings"
   },
   {
     "id": "term_004",
-    "categoryId": "hardware",
-    "term": "PWM",
-    "definition": "Pulse Width Modulation - technique for controlling power using square wave duty cycle",
-    "example": "PWM controls the brightness of LEDs or speed of motors"
+    "categoryId": "arvr_display_optics",
+    "term": "Holographic waveguide",
+    "chinese": "全息波导",
+    "pinyin": "quán xī bō dǎo",
+    "definition": "全息波导 (quán xī bō dǎo)",
+    "notes": "Uses holographic elements"
   },
   {
     "id": "term_005",
-    "categoryId": "bluetooth",
-    "term": "BLE",
-    "definition": "Bluetooth Low Energy - power-efficient wireless communication protocol",
-    "example": "BLE is used in fitness trackers and smartwatches"
+    "categoryId": "arvr_display_optics",
+    "term": "Field of view (FOV)",
+    "chinese": "视野角度",
+    "pinyin": "shì yě jiǎo dù",
+    "definition": "视野角度 (shì yě jiǎo dù)",
+    "notes": "Measured in degrees"
   },
   {
     "id": "term_006",
-    "categoryId": "bluetooth",
-    "term": "GATT",
-    "definition": "Generic Attribute Profile - defines how BLE devices exchange data",
-    "example": "GATT services organize characteristics for different device features"
+    "categoryId": "arvr_display_optics",
+    "term": "Resolution",
+    "chinese": "分辨率",
+    "pinyin": "fēn biàn lǜ",
+    "definition": "分辨率 (fēn biàn lǜ)",
+    "notes": "H × V pixels"
   },
   {
     "id": "term_007",
-    "categoryId": "bluetooth",
-    "term": "UUID",
-    "definition": "Universally Unique Identifier - identifies services and characteristics",
-    "example": "Each BLE service has a unique 128-bit UUID"
+    "categoryId": "arvr_display_optics",
+    "term": "Brightness",
+    "chinese": "亮度",
+    "pinyin": "liàng dù",
+    "definition": "亮度 (liàng dù)",
+    "notes": "Measured in nits"
   },
   {
     "id": "term_008",
-    "categoryId": "bluetooth",
-    "term": "Advertising",
-    "definition": "Broadcasting packets to announce device presence and capabilities",
-    "example": "BLE devices use advertising to become discoverable to other devices"
+    "categoryId": "arvr_display_optics",
+    "term": "Anti-reflection coating",
+    "chinese": "防反射涂层",
+    "pinyin": "fáng fǎn shè tú céng",
+    "definition": "防反射涂层 (fáng fǎn shè tú céng)",
+    "notes": "Reduces glare"
   },
   {
     "id": "term_009",
-    "categoryId": "software",
-    "term": "API",
-    "definition": "Application Programming Interface - set of functions for interacting with software",
-    "example": "The sensor API provides methods to read temperature and humidity data"
+    "categoryId": "arvr_display_optics",
+    "term": "Optical coating",
+    "chinese": "光学镀膜",
+    "pinyin": "guāng xué dù mó",
+    "definition": "光学镀膜 (guāng xué dù mó)",
+    "notes": "Surface treatment"
   },
   {
     "id": "term_010",
-    "categoryId": "software",
-    "term": "SDK",
-    "definition": "Software Development Kit - tools and libraries for building applications",
-    "example": "The manufacturer's SDK simplifies integration with their hardware"
+    "categoryId": "arvr_display_optics",
+    "term": "Lens grinding",
+    "chinese": "镜片研磨",
+    "pinyin": "jìng piàn yán mó",
+    "definition": "镜片研磨 (jìng piàn yán mó)",
+    "notes": "Precision manufacturing"
   },
   {
     "id": "term_011",
-    "categoryId": "software",
-    "term": "Driver",
-    "definition": "Software that enables communication between OS and hardware devices",
-    "example": "Install the USB driver to connect the development board"
+    "categoryId": "arvr_display_optics",
+    "term": "Optical polishing",
+    "chinese": "光学抛光",
+    "pinyin": "guāng xué pāo guāng",
+    "definition": "光学抛光 (guāng xué pāo guāng)",
+    "notes": "Surface finishing"
   },
   {
     "id": "term_012",
-    "categoryId": "firmware",
-    "term": "Bootloader",
-    "definition": "Initial program that loads and starts the main firmware",
-    "example": "The bootloader allows updating firmware over USB"
+    "categoryId": "arvr_display_optics",
+    "term": "Waveguide fabrication",
+    "chinese": "波导制造",
+    "pinyin": "bō dǎo zhì zào",
+    "definition": "波导制造 (bō dǎo zhì zào)",
+    "notes": "AR display manufacturing"
   },
   {
     "id": "term_013",
-    "categoryId": "firmware",
-    "term": "OTA",
-    "definition": "Over-The-Air - wireless method of updating device firmware",
-    "example": "OTA updates allow remote firmware deployment to deployed devices"
+    "categoryId": "arvr_display_optics",
+    "term": "Interferometer",
+    "chinese": "干涉仪",
+    "pinyin": "gān shè yí",
+    "definition": "干涉仪 (gān shè yí)",
+    "notes": "Optical testing"
   },
   {
     "id": "term_014",
-    "categoryId": "firmware",
-    "term": "Flash Memory",
-    "definition": "Non-volatile storage for firmware code and persistent data",
-    "example": "The microcontroller's flash memory stores the main application code"
+    "categoryId": "arvr_display_optics",
+    "term": "Calibration standards",
+    "chinese": "校准标准",
+    "pinyin": "jiào zhǔn biāo zhǔn",
+    "definition": "校准标准 (jiào zhǔn biāo zhǔn)",
+    "notes": "Quality verification"
+  },
+  {
+    "id": "term_015",
+    "categoryId": "sensors_tracking",
+    "term": "Inertial measurement unit",
+    "chinese": "惯性测量单元",
+    "pinyin": "guàn xìng cè liáng dān yuán",
+    "definition": "惯性测量单元 (guàn xìng cè liáng dān yuán)",
+    "notes": "IMU"
+  },
+  {
+    "id": "term_016",
+    "categoryId": "sensors_tracking",
+    "term": "Accelerometer",
+    "chinese": "加速度计",
+    "pinyin": "jiā sù dù jì",
+    "definition": "加速度计 (jiā sù dù jì)",
+    "notes": "Motion sensing"
+  },
+  {
+    "id": "term_017",
+    "categoryId": "sensors_tracking",
+    "term": "Gyroscope",
+    "chinese": "陀螺仪",
+    "pinyin": "tuó luó yí",
+    "definition": "陀螺仪 (tuó luó yí)",
+    "notes": "Angular motion"
+  },
+  {
+    "id": "term_018",
+    "categoryId": "sensors_tracking",
+    "term": "Magnetometer",
+    "chinese": "磁力计",
+    "pinyin": "cí lì jì",
+    "definition": "磁力计 (cí lì jì)",
+    "notes": "Magnetic field sensing"
+  },
+  {
+    "id": "term_019",
+    "categoryId": "sensors_tracking",
+    "term": "MEMS",
+    "chinese": "微机电系统",
+    "pinyin": "wēi jī diàn xì tǒng",
+    "definition": "微机电系统 (wēi jī diàn xì tǒng)",
+    "notes": "Micro-electromechanical"
+  },
+  {
+    "id": "term_020",
+    "categoryId": "sensors_tracking",
+    "term": "6DOF",
+    "chinese": "六自由度",
+    "pinyin": "liù zì yóu dù",
+    "definition": "六自由度 (liù zì yóu dù)",
+    "notes": "Six degrees of freedom"
+  },
+  {
+    "id": "term_021",
+    "categoryId": "sensors_tracking",
+    "term": "9DOF",
+    "chinese": "九自由度",
+    "pinyin": "jiǔ zì yóu dù",
+    "definition": "九自由度 (jiǔ zì yóu dù)",
+    "notes": "Nine degrees of freedom"
+  },
+  {
+    "id": "term_022",
+    "categoryId": "sensors_tracking",
+    "term": "Eye tracking",
+    "chinese": "眼球追踪",
+    "pinyin": "yǎn qiú zhuī zōng",
+    "definition": "眼球追踪 (yǎn qiú zhuī zōng)",
+    "notes": "Gaze detection"
+  },
+  {
+    "id": "term_023",
+    "categoryId": "sensors_tracking",
+    "term": "Infrared camera",
+    "chinese": "红外摄像头",
+    "pinyin": "hóng wài shè xiàng tóu",
+    "definition": "红外摄像头 (hóng wài shè xiàng tóu)",
+    "notes": "IR imaging"
+  },
+  {
+    "id": "term_024",
+    "categoryId": "sensors_tracking",
+    "term": "Pupil detection",
+    "chinese": "瞳孔检测",
+    "pinyin": "tóng kǒng jiǎn cè",
+    "definition": "瞳孔检测 (tóng kǒng jiǎn cè)",
+    "notes": "Eye tracking method"
+  },
+  {
+    "id": "term_025",
+    "categoryId": "sensors_tracking",
+    "term": "Corneal reflection",
+    "chinese": "角膜反射",
+    "pinyin": "jiǎo mó fǎn shè",
+    "definition": "角膜反射 (jiǎo mó fǎn shè)",
+    "notes": "PCCR method"
+  },
+  {
+    "id": "term_026",
+    "categoryId": "sensors_tracking",
+    "term": "Gaze tracking",
+    "chinese": "凝视追踪",
+    "pinyin": "níng shì zhuī zōng",
+    "definition": "凝视追踪 (níng shì zhuī zōng)",
+    "notes": "Eye position"
+  },
+  {
+    "id": "term_027",
+    "categoryId": "sensors_tracking",
+    "term": "Calibration",
+    "chinese": "校准",
+    "pinyin": "xiào zhǔn",
+    "definition": "校准 (xiào zhǔn)",
+    "notes": "System setup"
+  },
+  {
+    "id": "term_028",
+    "categoryId": "sensors_tracking",
+    "term": "IPD (interpupillary distance)",
+    "chinese": "瞳距",
+    "pinyin": "tóng jù",
+    "definition": "瞳距 (tóng jù)",
+    "notes": "Eye spacing"
+  },
+  {
+    "id": "term_029",
+    "categoryId": "sensors_tracking",
+    "term": "Sensor fusion",
+    "chinese": "传感器融合",
+    "pinyin": "chuán gǎn qì róng hé",
+    "definition": "传感器融合 (chuán gǎn qì róng hé)",
+    "notes": "Data combination"
+  },
+  {
+    "id": "term_030",
+    "categoryId": "sensors_tracking",
+    "term": "Kalman filter",
+    "chinese": "卡尔曼滤波器",
+    "pinyin": "kǎ ěr màn lǜ bō qì",
+    "definition": "卡尔曼滤波器 (kǎ ěr màn lǜ bō qì)",
+    "notes": "State estimation"
+  },
+  {
+    "id": "term_031",
+    "categoryId": "sensors_tracking",
+    "term": "Extended Kalman filter",
+    "chinese": "扩展卡尔曼滤波器",
+    "pinyin": "kuò zhǎn kǎ ěr màn lǜ bō qì",
+    "definition": "扩展卡尔曼滤波器 (kuò zhǎn kǎ ěr màn lǜ bō qì)",
+    "notes": "Advanced filtering"
+  },
+  {
+    "id": "term_032",
+    "categoryId": "audio_systems",
+    "term": "Bone conduction",
+    "chinese": "骨传导",
+    "pinyin": "gǔ chuán dǎo",
+    "definition": "骨传导 (gǔ chuán dǎo)",
+    "notes": "Audio transmission"
+  },
+  {
+    "id": "term_033",
+    "categoryId": "audio_systems",
+    "term": "Bone conduction speaker",
+    "chinese": "骨传导扬声器",
+    "pinyin": "gǔ chuán dǎo yáng shēng qì",
+    "definition": "骨传导扬声器 (gǔ chuán dǎo yáng shēng qì)",
+    "notes": "Vibration-based audio"
+  },
+  {
+    "id": "term_034",
+    "categoryId": "audio_systems",
+    "term": "Directional speaker",
+    "chinese": "定向扬声器",
+    "pinyin": "dìng xiàng yáng shēng qì",
+    "definition": "定向扬声器 (dìng xiàng yáng shēng qì)",
+    "notes": "Focused sound"
+  },
+  {
+    "id": "term_035",
+    "categoryId": "audio_systems",
+    "term": "Acoustic beamforming",
+    "chinese": "声学波束成形",
+    "pinyin": "shēng xué bō shù chéng xíng",
+    "definition": "声学波束成形 (shēng xué bō shù chéng xíng)",
+    "notes": "Sound focusing"
+  },
+  {
+    "id": "term_036",
+    "categoryId": "audio_systems",
+    "term": "Audio driver",
+    "chinese": "音频驱动程序",
+    "pinyin": "yīn pín qū dòng chéng xù",
+    "definition": "音频驱动程序 (yīn pín qū dòng chéng xù)",
+    "notes": "Software component"
+  },
+  {
+    "id": "term_037",
+    "categoryId": "audio_systems",
+    "term": "Noise cancellation",
+    "chinese": "噪音消除",
+    "pinyin": "zào yīn xiāo chú",
+    "definition": "噪音消除 (zào yīn xiāo chú)",
+    "notes": "Audio processing"
+  },
+  {
+    "id": "term_038",
+    "categoryId": "audio_systems",
+    "term": "Spatial audio",
+    "chinese": "空间音频",
+    "pinyin": "kōng jiān yīn pín",
+    "definition": "空间音频 (kōng jiān yīn pín)",
+    "notes": "3D sound"
+  },
+  {
+    "id": "term_039",
+    "categoryId": "audio_systems",
+    "term": "AudioRecord",
+    "chinese": "音频采集（AudioRecord）",
+    "pinyin": "yīn píng cǎi jí",
+    "definition": "音频采集（AudioRecord） (yīn píng cǎi jí)",
+    "notes": "Low-latency recording API"
+  },
+  {
+    "id": "term_040",
+    "categoryId": "audio_systems",
+    "term": "AudioTrack",
+    "chinese": "音频播放（AudioTrack）",
+    "pinyin": "yīn píng bō fàng",
+    "definition": "音频播放（AudioTrack） (yīn píng bō fàng)",
+    "notes": "Low-latency playback API"
+  },
+  {
+    "id": "term_041",
+    "categoryId": "audio_systems",
+    "term": "Audio Focus",
+    "chinese": "音频焦点（AudioManager）",
+    "pinyin": "yīn píng jiāo diǎn",
+    "definition": "音频焦点（AudioManager） (yīn píng jiāo diǎn)",
+    "notes": "Request/release audio focus; duck/pause"
+  },
+  {
+    "id": "term_042",
+    "categoryId": "audio_systems",
+    "term": "MediaCodec",
+    "chinese": "媒体编解码（MediaCodec）",
+    "pinyin": "méi tǐ biān jiě mǎ",
+    "definition": "媒体编解码（MediaCodec） (méi tǐ biān jiě mǎ)",
+    "notes": "Hardware-accelerated encoding/decoding"
+  },
+  {
+    "id": "term_043",
+    "categoryId": "audio_systems",
+    "term": "Camera2",
+    "chinese": "相机2接口（Camera2）",
+    "pinyin": "xiàng jī jiē kǒu",
+    "definition": "相机2接口（Camera2） (xiàng jī jiē kǒu)",
+    "notes": "Fine-grained camera control"
+  },
+  {
+    "id": "term_044",
+    "categoryId": "connectivity_power",
+    "term": "Wi-Fi 6",
+    "chinese": "Wi-Fi 6",
+    "pinyin": "Wi-Fi 6",
+    "definition": "Wi-Fi 6 (Wi-Fi 6)",
+    "notes": "Latest standard"
+  },
+  {
+    "id": "term_045",
+    "categoryId": "connectivity_power",
+    "term": "Bluetooth 5.0+",
+    "chinese": "蓝牙5.0+",
+    "pinyin": "lán yá 5.0+",
+    "definition": "蓝牙5.0+ (lán yá 5.0+)",
+    "notes": "Wireless protocol"
+  },
+  {
+    "id": "term_046",
+    "categoryId": "connectivity_power",
+    "term": "5G connectivity",
+    "chinese": "5G连接",
+    "pinyin": "5G lián jiē",
+    "definition": "5G连接 (5G lián jiē)",
+    "notes": "Cellular network"
+  },
+  {
+    "id": "term_047",
+    "categoryId": "connectivity_power",
+    "term": "NFC",
+    "chinese": "近场通信",
+    "pinyin": "jìn chǎng tōng xìn",
+    "definition": "近场通信 (jìn chǎng tōng xìn)",
+    "notes": "Near field communication"
+  },
+  {
+    "id": "term_048",
+    "categoryId": "connectivity_power",
+    "term": "Power management IC",
+    "chinese": "电源管理芯片",
+    "pinyin": "diàn yuán guǎn lǐ xīn piàn",
+    "definition": "电源管理芯片 (diàn yuán guǎn lǐ xīn piàn)",
+    "notes": "PMIC"
+  },
+  {
+    "id": "term_049",
+    "categoryId": "connectivity_power",
+    "term": "Lithium polymer battery",
+    "chinese": "锂聚合物电池",
+    "pinyin": "lǐ jù hé wù diàn chí",
+    "definition": "锂聚合物电池 (lǐ jù hé wù diàn chí)",
+    "notes": "LiPo battery"
+  },
+  {
+    "id": "term_050",
+    "categoryId": "connectivity_power",
+    "term": "Fast charging",
+    "chinese": "快充",
+    "pinyin": "kuài chōng",
+    "definition": "快充 (kuài chōng)",
+    "notes": "Rapid power"
+  },
+  {
+    "id": "term_051",
+    "categoryId": "connectivity_power",
+    "term": "Thermal management",
+    "chinese": "热管理",
+    "pinyin": "rè guǎn lǐ",
+    "definition": "热管理 (rè guǎn lǐ)",
+    "notes": "Heat control"
+  },
+  {
+    "id": "term_052",
+    "categoryId": "connectivity_power",
+    "term": "Wireless charging",
+    "chinese": "无线充电",
+    "pinyin": "wú xiàn chōng diàn",
+    "definition": "无线充电 (wú xiàn chōng diàn)",
+    "notes": "Inductive charging"
+  },
+  {
+    "id": "term_053",
+    "categoryId": "connectivity_power",
+    "term": "Battery life",
+    "chinese": "电池寿命",
+    "pinyin": "diàn chí shòu mìng",
+    "definition": "电池寿命 (diàn chí shòu mìng)",
+    "notes": "Usage duration"
+  },
+  {
+    "id": "term_054",
+    "categoryId": "connectivity_power",
+    "term": "Power consumption",
+    "chinese": "功耗",
+    "pinyin": "gōng hào",
+    "definition": "功耗 (gōng hào)",
+    "notes": "Energy usage"
+  },
+  {
+    "id": "term_055",
+    "categoryId": "connectivity_power",
+    "term": "Sleep mode",
+    "chinese": "睡眠模式",
+    "pinyin": "shuì mián mó shì",
+    "definition": "睡眠模式 (shuì mián mó shì)",
+    "notes": "Low power state"
+  },
+  {
+    "id": "term_056",
+    "categoryId": "connectivity_power",
+    "term": "Deep sleep",
+    "chinese": "深度睡眠",
+    "pinyin": "shēn dù shuì mián",
+    "definition": "深度睡眠 (shēn dù shuì mián)",
+    "notes": "Minimal power"
+  },
+  {
+    "id": "term_057",
+    "categoryId": "connectivity_power",
+    "term": "Doze",
+    "chinese": "打盹模式（Doze）",
+    "pinyin": "dǎ dǔn mó shì",
+    "definition": "打盹模式（Doze） (dǎ dǔn mó shì)",
+    "notes": ""
+  },
+  {
+    "id": "term_058",
+    "categoryId": "connectivity_power",
+    "term": "App Standby",
+    "chinese": "应用待机",
+    "pinyin": "yìng yòng dài jī",
+    "definition": "应用待机 (yìng yòng dài jī)",
+    "notes": ""
+  },
+  {
+    "id": "term_059",
+    "categoryId": "connectivity_power",
+    "term": "Foreground Service",
+    "chinese": "前台服务",
+    "pinyin": "qián tái fú wù",
+    "definition": "前台服务 (qián tái fú wù)",
+    "notes": ""
+  },
+  {
+    "id": "term_060",
+    "categoryId": "connectivity_power",
+    "term": "WakeLock",
+    "chinese": "唤醒锁",
+    "pinyin": "huàn xǐng suǒ",
+    "definition": "唤醒锁 (huàn xǐng suǒ)",
+    "notes": ""
+  },
+  {
+    "id": "term_061",
+    "categoryId": "connectivity_power",
+    "term": "JobScheduler",
+    "chinese": "任务调度器（JobScheduler）",
+    "pinyin": "rèn wù tiáo dù qì",
+    "definition": "任务调度器（JobScheduler） (rèn wù tiáo dù qì)",
+    "notes": ""
+  },
+  {
+    "id": "term_062",
+    "categoryId": "connectivity_power",
+    "term": "WorkManager",
+    "chinese": "工作管理器（WorkManager）",
+    "pinyin": "gōng zuò guǎn lǐ qì",
+    "definition": "工作管理器（WorkManager） (gōng zuò guǎn lǐ qì)",
+    "notes": ""
+  },
+  {
+    "id": "term_063",
+    "categoryId": "firmware_development",
+    "term": "Real-time operating system",
+    "chinese": "实时操作系统",
+    "pinyin": "shí shí cāo zuò xì tǒng",
+    "definition": "实时操作系统 (shí shí cāo zuò xì tǒng)",
+    "notes": "RTOS"
+  },
+  {
+    "id": "term_064",
+    "categoryId": "firmware_development",
+    "term": "FreeRTOS",
+    "chinese": "FreeRTOS实时操作系统",
+    "pinyin": "FreeRTOS shí shí cāo zuò xì tǒng",
+    "definition": "FreeRTOS实时操作系统 (FreeRTOS shí shí cāo zuò xì tǒng)",
+    "notes": "Popular RTOS"
+  },
+  {
+    "id": "term_065",
+    "categoryId": "firmware_development",
+    "term": "Embedded Linux",
+    "chinese": "嵌入式Linux",
+    "pinyin": "qiàn rù shì Linux",
+    "definition": "嵌入式Linux (qiàn rù shì Linux)",
+    "notes": "Linux for embedded"
+  },
+  {
+    "id": "term_066",
+    "categoryId": "firmware_development",
+    "term": "Zephyr OS",
+    "chinese": "Zephyr操作系统",
+    "pinyin": "Zephyr cāo zuò xì tǒng",
+    "definition": "Zephyr操作系统 (Zephyr cāo zuò xì tǒng)",
+    "notes": "IoT RTOS"
+  },
+  {
+    "id": "term_067",
+    "categoryId": "firmware_development",
+    "term": "Microcontroller",
+    "chinese": "微控制器",
+    "pinyin": "wēi kòng zhì qì",
+    "definition": "微控制器 (wēi kòng zhì qì)",
+    "notes": "MCU"
+  },
+  {
+    "id": "term_068",
+    "categoryId": "firmware_development",
+    "term": "ARM Cortex",
+    "chinese": "ARM Cortex处理器",
+    "pinyin": "ARM Cortex chù lǐ qì",
+    "definition": "ARM Cortex处理器 (ARM Cortex chù lǐ qì)",
+    "notes": "Processor architecture"
+  },
+  {
+    "id": "term_069",
+    "categoryId": "firmware_development",
+    "term": "Device driver",
+    "chinese": "设备驱动程序",
+    "pinyin": "shè bèi qū dòng chéng xù",
+    "definition": "设备驱动程序 (shè bèi qū dòng chéng xù)",
+    "notes": "Hardware interface"
+  },
+  {
+    "id": "term_070",
+    "categoryId": "firmware_development",
+    "term": "Sensor driver",
+    "chinese": "传感器驱动程序",
+    "pinyin": "chuán gǎn qì qū dòng chéng xù",
+    "definition": "传感器驱动程序 (chuán gǎn qì qū dòng chéng xù)",
+    "notes": "Sensor interface"
+  },
+  {
+    "id": "term_071",
+    "categoryId": "firmware_development",
+    "term": "Display driver",
+    "chinese": "显示驱动程序",
+    "pinyin": "xiǎn shì qū dòng chéng xù",
+    "definition": "显示驱动程序 (xiǎn shì qū dòng chéng xù)",
+    "notes": "Display control"
+  },
+  {
+    "id": "term_072",
+    "categoryId": "firmware_development",
+    "term": "GPIO",
+    "chinese": "通用输入输出",
+    "pinyin": "tōng yòng shū rù shū chū",
+    "definition": "通用输入输出 (tōng yòng shū rù shū chū)",
+    "notes": "General purpose I/O"
+  },
+  {
+    "id": "term_073",
+    "categoryId": "firmware_development",
+    "term": "Hardware register",
+    "chinese": "硬件寄存器",
+    "pinyin": "yìng jiàn jì cún qì",
+    "definition": "硬件寄存器 (yìng jiàn jì cún qì)",
+    "notes": "Register manipulation"
+  },
+  {
+    "id": "term_074",
+    "categoryId": "firmware_development",
+    "term": "Firmware power management",
+    "chinese": "固件电源管理",
+    "pinyin": "gù jiàn diàn yuán guǎn lǐ",
+    "definition": "固件电源管理 (gù jiàn diàn yuán guǎn lǐ)",
+    "notes": "Power optimization"
+  },
+  {
+    "id": "term_075",
+    "categoryId": "firmware_development",
+    "term": "Dynamic voltage scaling",
+    "chinese": "动态电压调节",
+    "pinyin": "dòng tài diàn yā tiáo jié",
+    "definition": "动态电压调节 (dòng tài diàn yā tiáo jié)",
+    "notes": "DVS"
+  },
+  {
+    "id": "term_076",
+    "categoryId": "firmware_development",
+    "term": "OTA update",
+    "chinese": "空中更新",
+    "pinyin": "kōng zhōng gēng xīn",
+    "definition": "空中更新 (kōng zhōng gēng xīn)",
+    "notes": "Over-the-air"
+  },
+  {
+    "id": "term_077",
+    "categoryId": "firmware_development",
+    "term": "Secure boot",
+    "chinese": "安全启动",
+    "pinyin": "ān quán qǐ dòng",
+    "definition": "安全启动 (ān quán qǐ dòng)",
+    "notes": "Security feature"
+  },
+  {
+    "id": "term_078",
+    "categoryId": "firmware_development",
+    "term": "Firmware signature",
+    "chinese": "固件签名",
+    "pinyin": "gù jiàn qiān míng",
+    "definition": "固件签名 (gù jiàn qiān míng)",
+    "notes": "Authentication"
+  },
+  {
+    "id": "term_079",
+    "categoryId": "firmware_development",
+    "term": "Bootloader",
+    "chinese": "引导程序",
+    "pinyin": "yǐn dǎo chéng xù",
+    "definition": "引导程序 (yǐn dǎo chéng xù)",
+    "notes": "Boot sequence"
+  },
+  {
+    "id": "term_080",
+    "categoryId": "firmware_development",
+    "term": "/v1/auth/login",
+    "chinese": "认证登录",
+    "pinyin": "rèn zhèng dēng lù",
+    "definition": "认证登录 (rèn zhèng dēng lù)",
+    "notes": ""
+  },
+  {
+    "id": "term_081",
+    "categoryId": "firmware_development",
+    "term": "/v1/auth/refresh",
+    "chinese": "刷新令牌",
+    "pinyin": "shuā xīn lìng pái",
+    "definition": "刷新令牌 (shuā xīn lìng pái)",
+    "notes": ""
+  },
+  {
+    "id": "term_082",
+    "categoryId": "firmware_development",
+    "term": "/v1/device/telemetry",
+    "chinese": "设备遥测",
+    "pinyin": "shè bèi yáo cè",
+    "definition": "设备遥测 (shè bèi yáo cè)",
+    "notes": ""
+  },
+  {
+    "id": "term_083",
+    "categoryId": "firmware_development",
+    "term": "/v1/device/settings",
+    "chinese": "设备设置",
+    "pinyin": "shè bèi shè zhì",
+    "definition": "设备设置 (shè bèi shè zhì)",
+    "notes": ""
+  },
+  {
+    "id": "term_084",
+    "categoryId": "firmware_development",
+    "term": "/v1/media/upload",
+    "chinese": "媒体上传",
+    "pinyin": "méi tǐ shàng chuán",
+    "definition": "媒体上传 (méi tǐ shàng chuán)",
+    "notes": ""
+  },
+  {
+    "id": "term_085",
+    "categoryId": "firmware_development",
+    "term": "/v1/translate/speech",
+    "chinese": "语音翻译",
+    "pinyin": "yǔ yīn fān yì",
+    "definition": "语音翻译 (yǔ yīn fān yì)",
+    "notes": ""
+  },
+  {
+    "id": "term_086",
+    "categoryId": "firmware_development",
+    "term": "/v1/translate/text",
+    "chinese": "文本翻译",
+    "pinyin": "wén běn fān yì",
+    "definition": "文本翻译 (wén běn fān yì)",
+    "notes": ""
+  },
+  {
+    "id": "term_087",
+    "categoryId": "firmware_development",
+    "term": "/v1/firmware/check",
+    "chinese": "固件检查",
+    "pinyin": "gù jiàn jiǎn chá",
+    "definition": "固件检查 (gù jiàn jiǎn chá)",
+    "notes": ""
+  },
+  {
+    "id": "term_088",
+    "categoryId": "firmware_development",
+    "term": "/v1/firmware/download",
+    "chinese": "固件下载",
+    "pinyin": "gù jiàn xià zǎi",
+    "definition": "固件下载 (gù jiàn xià zǎi)",
+    "notes": ""
+  },
+  {
+    "id": "term_089",
+    "categoryId": "firmware_development",
+    "term": "/v1/firmware/report",
+    "chinese": "固件报告",
+    "pinyin": "gù jiàn bào gào",
+    "definition": "固件报告 (gù jiàn bào gào)",
+    "notes": ""
+  },
+  {
+    "id": "term_090",
+    "categoryId": "communication_protocols",
+    "term": "I2C protocol",
+    "chinese": "I2C协议",
+    "pinyin": "I2C xié yì",
+    "definition": "I2C协议 (I2C xié yì)",
+    "notes": "Inter-integrated circuit"
+  },
+  {
+    "id": "term_091",
+    "categoryId": "communication_protocols",
+    "term": "SPI protocol",
+    "chinese": "SPI协议",
+    "pinyin": "SPI xié yì",
+    "definition": "SPI协议 (SPI xié yì)",
+    "notes": "Serial peripheral interface"
+  },
+  {
+    "id": "term_092",
+    "categoryId": "communication_protocols",
+    "term": "UART",
+    "chinese": "通用异步收发器",
+    "pinyin": "tōng yòng yì bù shōu fā qì",
+    "definition": "通用异步收发器 (tōng yòng yì bù shōu fā qì)",
+    "notes": "Serial communication"
+  },
+  {
+    "id": "term_093",
+    "categoryId": "communication_protocols",
+    "term": "Wireless stack",
+    "chinese": "无线协议栈",
+    "pinyin": "wú xiàn xié yì zhàn",
+    "definition": "无线协议栈 (wú xiàn xié yì zhàn)",
+    "notes": "Communication layers"
+  },
+  {
+    "id": "term_094",
+    "categoryId": "communication_protocols",
+    "term": "Bluetooth Low Energy",
+    "chinese": "低功耗蓝牙",
+    "pinyin": "dī gōng hào lán yá",
+    "definition": "低功耗蓝牙 (dī gōng hào lán yá)",
+    "notes": "BLE"
+  },
+  {
+    "id": "term_095",
+    "categoryId": "communication_protocols",
+    "term": "USB-C",
+    "chinese": "USB-C接口",
+    "pinyin": "USB-C jiē kǒu",
+    "definition": "USB-C接口 (USB-C jiē kǒu)",
+    "notes": "Universal connector"
+  },
+  {
+    "id": "term_096",
+    "categoryId": "communication_protocols",
+    "term": "PCIe",
+    "chinese": "PCIe总线",
+    "pinyin": "PCIe zǒng xiàn",
+    "definition": "PCIe总线 (PCIe zǒng xiàn)",
+    "notes": "High-speed interface"
+  },
+  {
+    "id": "term_097",
+    "categoryId": "bluetooth_connectivity_translation_table",
+    "term": "Pairing / Bonding",
+    "chinese": "配对 / 绑定",
+    "pinyin": "peì duì / bǎng dìng",
+    "definition": "配对 / 绑定 (peì duì / bǎng dìng)",
+    "notes": "建立可信连接；绑定会保存密钥"
+  },
+  {
+    "id": "term_098",
+    "categoryId": "bluetooth_connectivity_translation_table",
+    "term": "GATT",
+    "chinese": "通用属性协议",
+    "pinyin": "tōng yòng shǔ xìng xié y",
+    "definition": "通用属性协议 (tōng yòng shǔ xìng xié y)",
+    "notes": "BLE数据模型：服务/特征"
+  },
+  {
+    "id": "term_099",
+    "categoryId": "bluetooth_connectivity_translation_table",
+    "term": "SPP",
+    "chinese": "串口协议（SPP）",
+    "pinyin": "chuàn kǒu xié yì",
+    "definition": "串口协议（SPP） (chuàn kǒu xié yì)",
+    "notes": "蓝牙经典串口传输"
+  },
+  {
+    "id": "term_100",
+    "categoryId": "bluetooth_connectivity_translation_table",
+    "term": "LE Audio",
+    "chinese": "低功耗音频（LE Audio）",
+    "pinyin": "dī gōng hào yīn píng",
+    "definition": "低功耗音频（LE Audio） (dī gōng hào yīn píng)",
+    "notes": "基于LC3；支持广播音频"
+  },
+  {
+    "id": "term_101",
+    "categoryId": "bluetooth_connectivity_translation_table",
+    "term": "LC3",
+    "chinese": "低复杂度通信编解码器",
+    "pinyin": "dī fù zá dù tōng xìn biān jiě mǎ qì",
+    "definition": "低复杂度通信编解码器 (dī fù zá dù tōng xìn biān jiě mǎ qì)",
+    "notes": "LE Audio默认编解码器"
+  },
+  {
+    "id": "term_102",
+    "categoryId": "bluetooth_connectivity_translation_table",
+    "term": "Profile: HFP",
+    "chinese": "免提配置文件（HFP）",
+    "pinyin": "miǎn tí pèi zhì wén jiàn",
+    "definition": "免提配置文件（HFP） (miǎn tí pèi zhì wén jiàn)",
+    "notes": "语音通话"
+  },
+  {
+    "id": "term_103",
+    "categoryId": "bluetooth_connectivity_translation_table",
+    "term": "Profile: A2DP",
+    "chinese": "高级音频分发配置文件（A2DP）",
+    "pinyin": "gāo jí yīn píng fēn fā pèi zhì wén jiàn",
+    "definition": "高级音频分发配置文件（A2DP） (gāo jí yīn píng fēn fā pèi zhì wén jiàn)",
+    "notes": "立体声音频播放"
+  },
+  {
+    "id": "term_104",
+    "categoryId": "bluetooth_connectivity_translation_table",
+    "term": "Profile: AVRCP",
+    "chinese": "音视频远程控制配置文件（AVRCP）",
+    "pinyin": "yīn shì pín yuǎn chéng kòng zhì pèi zhì wén jiàn",
+    "definition": "音视频远程控制配置文件（AVRCP） (yīn shì pín yuǎn chéng kòng zhì pèi zhì wén jiàn)",
+    "notes": "播放控制"
+  },
+  {
+    "id": "term_105",
+    "categoryId": "software_development",
+    "term": "ARKit framework",
+    "chinese": "ARKit框架",
+    "pinyin": "ARKit kuàng jià",
+    "definition": "ARKit框架 (ARKit kuàng jià)",
+    "notes": "iOS AR platform"
+  },
+  {
+    "id": "term_106",
+    "categoryId": "software_development",
+    "term": "ARCore platform",
+    "chinese": "ARCore平台",
+    "pinyin": "ARCore píng tái",
+    "definition": "ARCore平台 (ARCore píng tái)",
+    "notes": "Android AR platform"
+  },
+  {
+    "id": "term_107",
+    "categoryId": "software_development",
+    "term": "World tracking",
+    "chinese": "世界跟踪",
+    "pinyin": "shì jiè gēn zōng",
+    "definition": "世界跟踪 (shì jiè gēn zōng)",
+    "notes": "Environmental tracking"
+  },
+  {
+    "id": "term_108",
+    "categoryId": "software_development",
+    "term": "Scene understanding",
+    "chinese": "场景理解",
+    "pinyin": "chǎng jǐng lǐ jiě",
+    "definition": "场景理解 (chǎng jǐng lǐ jiě)",
+    "notes": "Environment analysis"
+  },
+  {
+    "id": "term_109",
+    "categoryId": "software_development",
+    "term": "Environmental understanding",
+    "chinese": "环境理解",
+    "pinyin": "huán jìng lǐ jiě",
+    "definition": "环境理解 (huán jìng lǐ jiě)",
+    "notes": "Spatial awareness"
+  },
+  {
+    "id": "term_110",
+    "categoryId": "software_development",
+    "term": "Light estimation",
+    "chinese": "光照估算",
+    "pinyin": "guāng zhào gū suán",
+    "definition": "光照估算 (guāng zhào gū suán)",
+    "notes": "Lighting analysis"
+  },
+  {
+    "id": "term_111",
+    "categoryId": "software_development",
+    "term": "AR Foundation",
+    "chinese": "AR基础框架",
+    "pinyin": "AR jī chǔ kuàng jià",
+    "definition": "AR基础框架 (AR jī chǔ kuàng jià)",
+    "notes": "Unity AR framework"
+  },
+  {
+    "id": "term_112",
+    "categoryId": "software_development",
+    "term": "WebXR standards",
+    "chinese": "WebXR标准",
+    "pinyin": "WebXR biāo zhǔn",
+    "definition": "WebXR标准 (WebXR biāo zhǔn)",
+    "notes": "Web-based AR/VR"
+  },
+  {
+    "id": "term_113",
+    "categoryId": "software_development",
+    "term": "SLAM",
+    "chinese": "同步定位与建图",
+    "pinyin": "tóng bù dìng wèi yǔ jiàn tú",
+    "definition": "同步定位与建图 (tóng bù dìng wèi yǔ jiàn tú)",
+    "notes": "Simultaneous localization"
+  },
+  {
+    "id": "term_114",
+    "categoryId": "software_development",
+    "term": "Object detection",
+    "chinese": "目标检测",
+    "pinyin": "mù biāo jiǎn cè",
+    "definition": "目标检测 (mù biāo jiǎn cè)",
+    "notes": "Computer vision"
+  },
+  {
+    "id": "term_115",
+    "categoryId": "software_development",
+    "term": "Feature matching",
+    "chinese": "特征匹配",
+    "pinyin": "tè zhēng pǐ pèi",
+    "definition": "特征匹配 (tè zhēng pǐ pèi)",
+    "notes": "Image processing"
+  },
+  {
+    "id": "term_116",
+    "categoryId": "software_development",
+    "term": "Convolutional network",
+    "chinese": "卷积网络",
+    "pinyin": "juǎn jī wǎng luò",
+    "definition": "卷积网络 (juǎn jī wǎng luò)",
+    "notes": "CNN"
+  },
+  {
+    "id": "term_117",
+    "categoryId": "software_development",
+    "term": "Edge deployment",
+    "chinese": "边缘部署",
+    "pinyin": "biān yuán bù shǔ",
+    "definition": "边缘部署 (biān yuán bù shǔ)",
+    "notes": "Local processing"
+  },
+  {
+    "id": "term_118",
+    "categoryId": "software_development",
+    "term": "Spatial interface",
+    "chinese": "空间界面",
+    "pinyin": "kōng jiān jiè miàn",
+    "definition": "空间界面 (kōng jiān jiè miàn)",
+    "notes": "3D UI"
+  },
+  {
+    "id": "term_119",
+    "categoryId": "software_development",
+    "term": "Gesture recognition",
+    "chinese": "手势识别",
+    "pinyin": "shǒu shì shí bié",
+    "definition": "手势识别 (shǒu shì shí bié)",
+    "notes": "Hand tracking"
+  },
+  {
+    "id": "term_120",
+    "categoryId": "software_development",
+    "term": "Hand tracking",
+    "chinese": "手部跟踪",
+    "pinyin": "shǒu bù gēn zōng",
+    "definition": "手部跟踪 (shǒu bù gēn zōng)",
+    "notes": "Gesture input"
+  },
+  {
+    "id": "term_121",
+    "categoryId": "software_development",
+    "term": "Air tap interaction",
+    "chinese": "空中点击",
+    "pinyin": "kōng zhōng diǎn jī",
+    "definition": "空中点击 (kōng zhōng diǎn jī)",
+    "notes": "Gesture control"
+  },
+  {
+    "id": "term_122",
+    "categoryId": "software_development",
+    "term": "Gaze-based interaction",
+    "chinese": "凝视交互",
+    "pinyin": "níng shì jiāo hù",
+    "definition": "凝视交互 (níng shì jiāo hù)",
+    "notes": "Eye control"
+  },
+  {
+    "id": "term_123",
+    "categoryId": "manufacturing_assembly",
+    "term": "Surface Mount Technology",
+    "chinese": "表面贴装技术",
+    "pinyin": "biǎo miàn tiē zhuāng jì shù",
+    "definition": "表面贴装技术 (biǎo miàn tiē zhuāng jì shù)",
+    "notes": "SMT"
+  },
+  {
+    "id": "term_124",
+    "categoryId": "manufacturing_assembly",
+    "term": "Pick-and-place machine",
+    "chinese": "贴片机",
+    "pinyin": "tiē piàn jī",
+    "definition": "贴片机 (tiē piàn jī)",
+    "notes": "Component placement"
+  },
+  {
+    "id": "term_125",
+    "categoryId": "manufacturing_assembly",
+    "term": "Reflow soldering",
+    "chinese": "回流焊",
+    "pinyin": "huí liú hàn",
+    "definition": "回流焊 (huí liú hàn)",
+    "notes": "Soldering process"
+  },
+  {
+    "id": "term_126",
+    "categoryId": "manufacturing_assembly",
+    "term": "Automated Optical Inspection",
+    "chinese": "自动光学检测",
+    "pinyin": "zì dòng guāng xué jiǎn cè",
+    "definition": "自动光学检测 (zì dòng guāng xué jiǎn cè)",
+    "notes": "AOI"
+  },
+  {
+    "id": "term_127",
+    "categoryId": "manufacturing_assembly",
+    "term": "Statistical Process Control",
+    "chinese": "统计过程控制",
+    "pinyin": "tǒng jì guò chéng kòng zhì",
+    "definition": "统计过程控制 (tǒng jì guò chéng kòng zhì)",
+    "notes": "SPC"
+  },
+  {
+    "id": "term_128",
+    "categoryId": "manufacturing_assembly",
+    "term": "First pass yield",
+    "chinese": "一次合格率",
+    "pinyin": "yī cì hé gé lǜ",
+    "definition": "一次合格率 (yī cì hé gé lǜ)",
+    "notes": "Quality metric"
+  },
+  {
+    "id": "term_129",
+    "categoryId": "manufacturing_assembly",
+    "term": "Process capability",
+    "chinese": "过程能力",
+    "pinyin": "guò chéng néng lì",
+    "definition": "过程能力 (guò chéng néng lì)",
+    "notes": "Manufacturing control"
+  },
+  {
+    "id": "term_130",
+    "categoryId": "manufacturing_assembly",
+    "term": "Yield rate",
+    "chinese": "良品率",
+    "pinyin": "liáng pǐn lǜ",
+    "definition": "良品率 (liáng pǐn lǜ)",
+    "notes": "Production quality"
+  },
+  {
+    "id": "term_131",
+    "categoryId": "manufacturing_assembly",
+    "term": "Cycle time",
+    "chinese": "周期时间",
+    "pinyin": "zhōu qī shí jiān",
+    "definition": "周期时间 (zhōu qī shí jiān)",
+    "notes": "Manufacturing speed"
+  },
+  {
+    "id": "term_132",
+    "categoryId": "manufacturing_assembly",
+    "term": "Throughput",
+    "chinese": "产能",
+    "pinyin": "chǎn néng",
+    "definition": "产能 (chǎn néng)",
+    "notes": "Production capacity"
+  },
+  {
+    "id": "term_133",
+    "categoryId": "manufacturing_assembly",
+    "term": "Assembly line",
+    "chinese": "装配线",
+    "pinyin": "zhuāng pèi xiàn",
+    "definition": "装配线 (zhuāng pèi xiàn)",
+    "notes": "Production line"
+  },
+  {
+    "id": "term_134",
+    "categoryId": "manufacturing_assembly",
+    "term": "Quality control",
+    "chinese": "质量控制",
+    "pinyin": "zhì liàng kòng zhì",
+    "definition": "质量控制 (zhì liàng kòng zhì)",
+    "notes": "QC"
+  },
+  {
+    "id": "term_135",
+    "categoryId": "manufacturing_assembly",
+    "term": "Inspection",
+    "chinese": "检验",
+    "pinyin": "jiǎn yàn",
+    "definition": "检验 (jiǎn yàn)",
+    "notes": "Quality check"
+  },
+  {
+    "id": "term_136",
+    "categoryId": "manufacturing_assembly",
+    "term": "Test fixture",
+    "chinese": "测试夹具",
+    "pinyin": "cè shì jiā jù",
+    "definition": "测试夹具 (cè shì jiā jù)",
+    "notes": "Testing equipment"
+  },
+  {
+    "id": "term_137",
+    "categoryId": "certification_compliance",
+    "term": "CE marking",
+    "chinese": "CE标记",
+    "pinyin": "CE biāo jì",
+    "definition": "CE标记 (CE biāo jì)",
+    "notes": "European compliance"
+  },
+  {
+    "id": "term_138",
+    "categoryId": "certification_compliance",
+    "term": "FCC certification",
+    "chinese": "FCC认证",
+    "pinyin": "FCC rèn zhèng",
+    "definition": "FCC认证 (FCC rèn zhèng)",
+    "notes": "US certification"
+  },
+  {
+    "id": "term_139",
+    "categoryId": "certification_compliance",
+    "term": "RoHS compliance",
+    "chinese": "RoHS合规",
+    "pinyin": "RoHS hé guī",
+    "definition": "RoHS合规 (RoHS hé guī)",
+    "notes": "Environmental safety"
+  },
+  {
+    "id": "term_140",
+    "categoryId": "certification_compliance",
+    "term": "IP rating",
+    "chinese": "IP防护等级",
+    "pinyin": "IP fáng hù děng jí",
+    "definition": "IP防护等级 (IP fáng hù děng jí)",
+    "notes": "Ingress protection"
+  },
+  {
+    "id": "term_141",
+    "categoryId": "certification_compliance",
+    "term": "Supplier qualification",
+    "chinese": "供应商认证",
+    "pinyin": "gōng yìng shāng rèn zhèng",
+    "definition": "供应商认证 (gōng yìng shāng rèn zhèng)",
+    "notes": "Vendor approval"
+  },
+  {
+    "id": "term_142",
+    "categoryId": "certification_compliance",
+    "term": "Inventory management",
+    "chinese": "库存管理",
+    "pinyin": "kù cún guǎn lǐ",
+    "definition": "库存管理 (kù cún guǎn lǐ)",
+    "notes": "Stock control"
+  },
+  {
+    "id": "term_143",
+    "categoryId": "certification_compliance",
+    "term": "Just-in-Time",
+    "chinese": "准时制",
+    "pinyin": "zhǔn shí zhì",
+    "definition": "准时制 (zhǔn shí zhì)",
+    "notes": "JIT manufacturing"
+  },
+  {
+    "id": "term_144",
+    "categoryId": "certification_compliance",
+    "term": "Electromagnetic compatibility",
+    "chinese": "电磁兼容性",
+    "pinyin": "diàn cí jiān róng xìng",
+    "definition": "电磁兼容性 (diàn cí jiān róng xìng)",
+    "notes": "EMC"
+  },
+  {
+    "id": "term_145",
+    "categoryId": "certification_compliance",
+    "term": "Regulatory approval",
+    "chinese": "监管批准",
+    "pinyin": "jiān guǎn pī zhǔn",
+    "definition": "监管批准 (jiān guǎn pī zhǔn)",
+    "notes": "Legal compliance"
+  },
+  {
+    "id": "term_146",
+    "categoryId": "business_production_terms",
+    "term": "OEM",
+    "chinese": "原始设备制造商",
+    "pinyin": "yuán shǐ shè bèi zhì zào shāng",
+    "definition": "原始设备制造商 (yuán shǐ shè bèi zhì zào shāng)",
+    "notes": "Original equipment manufacturer"
+  },
+  {
+    "id": "term_147",
+    "categoryId": "business_production_terms",
+    "term": "ODM",
+    "chinese": "原始设计制造商",
+    "pinyin": "yuán shǐ shè jì zhì zào shāng",
+    "definition": "原始设计制造商 (yuán shǐ shè jì zhì zào shāng)",
+    "notes": "Original design manufacturer"
+  },
+  {
+    "id": "term_148",
+    "categoryId": "business_production_terms",
+    "term": "Technical specification",
+    "chinese": "技术规范",
+    "pinyin": "jì shù guī fàn",
+    "definition": "技术规范 (jì shù guī fàn)",
+    "notes": "Engineering specs"
+  },
+  {
+    "id": "term_149",
+    "categoryId": "business_production_terms",
+    "term": "Bill of materials",
+    "chinese": "物料清单",
+    "pinyin": "wù liào qīng dān",
+    "definition": "物料清单 (wù liào qīng dān)",
+    "notes": "BOM"
+  },
+  {
+    "id": "term_150",
+    "categoryId": "business_production_terms",
+    "term": "Minimum order quantity",
+    "chinese": "最小订货量",
+    "pinyin": "zuì xiǎo dìng huò liàng",
+    "definition": "最小订货量 (zuì xiǎo dìng huò liàng)",
+    "notes": "MOQ"
+  },
+  {
+    "id": "term_151",
+    "categoryId": "business_production_terms",
+    "term": "Lead time",
+    "chinese": "交付周期",
+    "pinyin": "jiāo fù zhōu qī",
+    "definition": "交付周期 (jiāo fù zhōu qī)",
+    "notes": "Production time"
+  },
+  {
+    "id": "term_152",
+    "categoryId": "business_production_terms",
+    "term": "Unit cost",
+    "chinese": "单位成本",
+    "pinyin": "dān wèi chéng běn",
+    "definition": "单位成本 (dān wèi chéng běn)",
+    "notes": "Per-piece cost"
+  },
+  {
+    "id": "term_153",
+    "categoryId": "business_production_terms",
+    "term": "Tooling cost",
+    "chinese": "模具费用",
+    "pinyin": "mó jù fèi yòng",
+    "definition": "模具费用 (mó jù fèi yòng)",
+    "notes": "Setup costs"
+  },
+  {
+    "id": "term_154",
+    "categoryId": "business_production_terms",
+    "term": "NRE cost",
+    "chinese": "非重复性工程费用",
+    "pinyin": "fēi chóng fù xìng gōng chéng fèi yòng",
+    "definition": "非重复性工程费用 (fēi chóng fù xìng gōng chéng fèi yòng)",
+    "notes": "Non-recurring engineering"
+  },
+  {
+    "id": "term_155",
+    "categoryId": "business_production_terms",
+    "term": "Prototype",
+    "chinese": "原型",
+    "pinyin": "yuán xíng",
+    "definition": "原型 (yuán xíng)",
+    "notes": "Development sample"
+  },
+  {
+    "id": "term_156",
+    "categoryId": "business_production_terms",
+    "term": "Mass production",
+    "chinese": "量产",
+    "pinyin": "liàng chǎn",
+    "definition": "量产 (liàng chǎn)",
+    "notes": "Volume manufacturing"
+  },
+  {
+    "id": "term_157",
+    "categoryId": "business_production_terms",
+    "term": "Pilot run",
+    "chinese": "试产",
+    "pinyin": "shì chǎn",
+    "definition": "试产 (shì chǎn)",
+    "notes": "Pre-production"
+  },
+  {
+    "id": "term_158",
+    "categoryId": "units_measurements",
+    "term": "Millimeter",
+    "chinese": "毫米",
+    "pinyin": "háo mǐ",
+    "definition": "毫米 (háo mǐ)",
+    "notes": "mm"
+  },
+  {
+    "id": "term_159",
+    "categoryId": "units_measurements",
+    "term": "Gram",
+    "chinese": "克",
+    "pinyin": "kè",
+    "definition": "克 (kè)",
+    "notes": "g"
+  },
+  {
+    "id": "term_160",
+    "categoryId": "units_measurements",
+    "term": "Milliampere-hour",
+    "chinese": "毫安时",
+    "pinyin": "háo ān shí",
+    "definition": "毫安时 (háo ān shí)",
+    "notes": "mAh"
+  },
+  {
+    "id": "term_161",
+    "categoryId": "units_measurements",
+    "term": "Degree",
+    "chinese": "度",
+    "pinyin": "dù",
+    "definition": "度 (dù)",
+    "notes": "Angular measurement"
+  },
+  {
+    "id": "term_162",
+    "categoryId": "units_measurements",
+    "term": "Nit",
+    "chinese": "尼特",
+    "pinyin": "ní tè",
+    "definition": "尼特 (ní tè)",
+    "notes": "Brightness unit"
+  },
+  {
+    "id": "term_163",
+    "categoryId": "units_measurements",
+    "term": "Pixel",
+    "chinese": "像素",
+    "pinyin": "xiàng sù",
+    "definition": "像素 (xiàng sù)",
+    "notes": "Display element"
+  },
+  {
+    "id": "term_164",
+    "categoryId": "units_measurements",
+    "term": "Hertz",
+    "chinese": "赫兹",
+    "pinyin": "hè zī",
+    "definition": "赫兹 (hè zī)",
+    "notes": "Frequency"
+  },
+  {
+    "id": "term_165",
+    "categoryId": "units_measurements",
+    "term": "Watt",
+    "chinese": "瓦特",
+    "pinyin": "wǎ tè",
+    "definition": "瓦特 (wǎ tè)",
+    "notes": "Power unit"
+  },
+  {
+    "id": "term_166",
+    "categoryId": "units_measurements",
+    "term": "Volt",
+    "chinese": "伏特",
+    "pinyin": "fú tè",
+    "definition": "伏特 (fú tè)",
+    "notes": "Voltage"
+  },
+  {
+    "id": "term_167",
+    "categoryId": "units_measurements",
+    "term": "Ampere",
+    "chinese": "安培",
+    "pinyin": "ān péi",
+    "definition": "安培 (ān péi)",
+    "notes": "Current"
   }
 ]

@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Category, Term, SessionData, SessionState, StudyMode } from './types';
+import type { Category, Term, SessionData } from './types';
 import categoriesData from './data/categories.json';
 import termsData from './data/terms.json';
 

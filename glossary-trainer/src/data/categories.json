@@ -1,22 +1,62 @@
 [
   {
-    "id": "hardware",
-    "name": "Hardware Terms",
-    "icon": "🔧"
+    "id": "arvr_display_optics",
+    "name": "AR/VR Display & Optics",
+    "icon": "📋"
   },
   {
-    "id": "bluetooth",
-    "name": "Bluetooth Terms",
+    "id": "sensors_tracking",
+    "name": "Sensors & Tracking",
     "icon": "📡"
   },
   {
-    "id": "software",
-    "name": "Software Terms",
-    "icon": "💾"
+    "id": "audio_systems",
+    "name": "Audio Systems",
+    "icon": "🔊"
   },
   {
-    "id": "firmware",
-    "name": "Firmware Terms",
-    "icon": "⚡"
+    "id": "connectivity_power",
+    "name": "Connectivity & Power",
+    "icon": "🔋"
+  },
+  {
+    "id": "firmware_development",
+    "name": "Firmware Development",
+    "icon": "⚙️"
+  },
+  {
+    "id": "communication_protocols",
+    "name": "Communication Protocols",
+    "icon": "🔗"
+  },
+  {
+    "id": "bluetooth_connectivity_translation_table",
+    "name": "Bluetooth Connectivity — Translation Table",
+    "icon": "📶"
+  },
+  {
+    "id": "software_development",
+    "name": "Software Development",
+    "icon": "💻"
+  },
+  {
+    "id": "manufacturing_assembly",
+    "name": "Manufacturing & Assembly",
+    "icon": "🏭"
+  },
+  {
+    "id": "certification_compliance",
+    "name": "Certification & Compliance",
+    "icon": "✅"
+  },
+  {
+    "id": "business_production_terms",
+    "name": "Business & Production Terms",
+    "icon": "💼"
+  },
+  {
+    "id": "units_measurements",
+    "name": "Units & Measurements",
+    "icon": "📏"
   }
 ]

@@ -9,8 +9,10 @@ export interface Term {
   id: string;
   categoryId: string;
   term: string;
+  chinese: string;
+  pinyin: string;
   definition: string;
-  example?: string;
+  notes?: string;
 }
 
 // Quiz interfaces
