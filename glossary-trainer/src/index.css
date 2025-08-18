@@ -1,10 +1,8 @@
 
+@import "tailwindcss";
 @import "tw-animate-css";
-@import "tailwindcss/preflight";
 
 @custom-variant dark (&:is(.dark *));
-
-@tailwind utilities;
 
 /* Flashcard flip animation */
 .flashcard {

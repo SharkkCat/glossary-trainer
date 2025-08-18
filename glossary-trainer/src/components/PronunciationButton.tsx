@@ -113,15 +113,15 @@ export default function PronunciationButton({
 
   const baseClasses = `
     inline-flex items-center justify-center gap-1
-    bg-blue-500 hover:bg-blue-600 
+    bg-gradient-to-r from-lime-500 to-green-500 hover:from-lime-600 hover:to-green-600
     text-white font-medium
     rounded-full
     transition-all duration-200
-    focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2
+    focus:outline-none focus:ring-2 focus:ring-lime-500 focus:ring-offset-2
     disabled:opacity-50 disabled:cursor-not-allowed
     ${sizeClasses[size]}
     ${hasError ? 'bg-red-500 hover:bg-red-600' : ''}
-    ${isPlaying ? 'bg-green-500 hover:bg-green-600' : ''}
+    ${isPlaying ? 'from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600' : ''}
     ${className}
   `;
 
