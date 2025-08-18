@@ -1,0 +1,100 @@
+[
+  {
+    "id": "term_001",
+    "categoryId": "hardware",
+    "term": "PCB",
+    "definition": "Printed Circuit Board - connects electronic components",
+    "example": "The PCB layout affects signal integrity"
+  },
+  {
+    "id": "term_002",
+    "categoryId": "hardware",
+    "term": "GPIO",
+    "definition": "General Purpose Input/Output - configurable digital signal pins",
+    "example": "GPIO pins can control LEDs or read sensor data"
+  },
+  {
+    "id": "term_003",
+    "categoryId": "hardware",
+    "term": "ADC",
+    "definition": "Analog-to-Digital Converter - converts analog signals to digital values",
+    "example": "The ADC reads the analog voltage from the temperature sensor"
+  },
+  {
+    "id": "term_004",
+    "categoryId": "hardware",
+    "term": "PWM",
+    "definition": "Pulse Width Modulation - technique for controlling power using square wave duty cycle",
+    "example": "PWM controls the brightness of LEDs or speed of motors"
+  },
+  {
+    "id": "term_005",
+    "categoryId": "bluetooth",
+    "term": "BLE",
+    "definition": "Bluetooth Low Energy - power-efficient wireless communication protocol",
+    "example": "BLE is used in fitness trackers and smartwatches"
+  },
+  {
+    "id": "term_006",
+    "categoryId": "bluetooth",
+    "term": "GATT",
+    "definition": "Generic Attribute Profile - defines how BLE devices exchange data",
+    "example": "GATT services organize characteristics for different device features"
+  },
+  {
+    "id": "term_007",
+    "categoryId": "bluetooth",
+    "term": "UUID",
+    "definition": "Universally Unique Identifier - identifies services and characteristics",
+    "example": "Each BLE service has a unique 128-bit UUID"
+  },
+  {
+    "id": "term_008",
+    "categoryId": "bluetooth",
+    "term": "Advertising",
+    "definition": "Broadcasting packets to announce device presence and capabilities",
+    "example": "BLE devices use advertising to become discoverable to other devices"
+  },
+  {
+    "id": "term_009",
+    "categoryId": "software",
+    "term": "API",
+    "definition": "Application Programming Interface - set of functions for interacting with software",
+    "example": "The sensor API provides methods to read temperature and humidity data"
+  },
+  {
+    "id": "term_010",
+    "categoryId": "software",
+    "term": "SDK",
+    "definition": "Software Development Kit - tools and libraries for building applications",
+    "example": "The manufacturer's SDK simplifies integration with their hardware"
+  },
+  {
+    "id": "term_011",
+    "categoryId": "software",
+    "term": "Driver",
+    "definition": "Software that enables communication between OS and hardware devices",
+    "example": "Install the USB driver to connect the development board"
+  },
+  {
+    "id": "term_012",
+    "categoryId": "firmware",
+    "term": "Bootloader",
+    "definition": "Initial program that loads and starts the main firmware",
+    "example": "The bootloader allows updating firmware over USB"
+  },
+  {
+    "id": "term_013",
+    "categoryId": "firmware",
+    "term": "OTA",
+    "definition": "Over-The-Air - wireless method of updating device firmware",
+    "example": "OTA updates allow remote firmware deployment to deployed devices"
+  },
+  {
+    "id": "term_014",
+    "categoryId": "firmware",
+    "term": "Flash Memory",
+    "definition": "Non-volatile storage for firmware code and persistent data",
+    "example": "The microcontroller's flash memory stores the main application code"
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "id": "hardware",
+    "name": "Hardware Terms",
+    "icon": "🔧"
+  },
+  {
+    "id": "bluetooth",
+    "name": "Bluetooth Terms",
+    "icon": "📡"
+  },
+  {
+    "id": "software",
+    "name": "Software Terms",
+    "icon": "💾"
+  },
+  {
+    "id": "firmware",
+    "name": "Firmware Terms",
+    "icon": "⚡"
+  }
+]
