@@ -198,3 +198,93 @@ function generateDistractors(correctTerm: Term, allTerms: Term[]) {
 - ✅ **Mobile-First**: Thumb-friendly design
 - ✅ **Ultra-Fast**: < 3 hours total development
 - ✅ **Zero Maintenance**: Static files only
+
+---
+
+## 🔊 6. Audio Pronunciation Feature (NEW)
+
+### Feature Overview
+Add Chinese pronunciation audio to help learners understand how technical terms sound when spoken. Uses Web Speech API to keep the app lightweight without requiring audio files.
+
+### Implementation Plan
+
+#### Phase 6: Audio Pronunciation (✅ COMPLETED)
+- [x] **Feature Detection**: Check for Web Speech API and Chinese voice support
+- [x] **Pronunciation Component**: Create play button with fallback handling
+- [x] **Integration**: Add to Flashcard component (Chinese side)
+- [x] **User Feedback**: Inform users about missing language packs
+- [x] **Graceful Degradation**: Hide feature when not supported
+
+### Technical Approach
+
+#### Web Speech API Prerequisites & Challenges
+- **Browser Support**: Chrome ✅, Firefox ⚠️, Safari ⚠️, Mobile 📱 variable
+- **Chinese Voice Availability**: Not all devices have Chinese TTS voices pre-installed
+- **Network Dependencies**: Many browsers require internet for cloud-based TTS
+- **Pronunciation Accuracy**: Tonal language challenges, technical terms may not be in vocabulary
+- **Performance**: Potential latency, queue management needed
+
+#### Implementation Strategy
+```typescript
+// Feature detection
+const hasChineseVoice = () => {
+  if (!('speechSynthesis' in window)) return false;
+  const voices = speechSynthesis.getVoices();
+  return voices.some(voice => voice.lang.startsWith('zh'));
+};
+
+// Progressive enhancement
+const PronunciationButton = ({ text, onError }) => {
+  const [isSupported, setIsSupported] = useState(false);
+  const [isPlaying, setIsPlaying] = useState(false);
+  
+  // Only show if Chinese voices available
+  if (!isSupported) return null;
+  
+  return (
+    <button onClick={handleSpeak} disabled={isPlaying}>
+      🔊 Play
+    </button>
+  );
+};
+```
+
+#### Fallback Strategy
+1. **Primary**: Web Speech API with Chinese voices
+2. **Fallback**: Hide feature gracefully if not supported
+3. **User Guidance**: Inform users how to install language packs if needed
+4. **Future**: Consider pre-recorded audio files for critical terms
+
+#### User Experience Considerations
+- **Progressive Enhancement**: Feature appears only when supported
+- **Visual Feedback**: Loading state while speech synthesizes
+- **Error Handling**: Clear messaging when pronunciation fails
+- **Accessibility**: Proper ARIA labels and keyboard support
+
+### Updated File Structure
+```
+src/
+├── components/
+│   ├── PronunciationButton.tsx    # NEW: Audio playback component
+│   ├── Flashcard.tsx             # UPDATED: Include pronunciation
+│   └── ...
+├── utils/
+│   ├── speechSynthesis.ts        # NEW: TTS utilities and detection
+│   └── ...
+```
+
+### Browser Compatibility Matrix
+| Browser | TTS Support | Chinese Voices | Notes |
+|---------|-------------|----------------|-------|
+| Chrome | ✅ | ✅ | Best support, cloud-based |
+| Firefox | ⚠️ | ⚠️ | Limited voices, offline only |
+| Safari | ⚠️ | ⚠️ | Inconsistent across versions |
+| Mobile Chrome | ✅ | 📱 | Depends on OS language packs |
+| Mobile Safari | ⚠️ | 📱 | Limited iOS support |
+
+### Success Metrics
+- [ ] Feature detection works across all major browsers
+- [ ] Graceful degradation when Chinese voices unavailable
+- [ ] No app crashes from unsupported browsers
+- [ ] Clear user feedback for missing language packs
+- [ ] Pronunciation quality acceptable for learning purposes

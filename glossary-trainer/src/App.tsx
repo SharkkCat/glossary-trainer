@@ -6,6 +6,7 @@ import CategorySelector from './components/CategorySelector';
 import Flashcard from './components/Flashcard';
 import MCQ from './components/MCQ';
 import SessionComplete from './components/SessionComplete';
+import PronunciationInfo from './components/PronunciationInfo';
 import { shuffleTerms, generateMCQQuestions } from './utils/quiz';
 
 function App() {
@@ -197,11 +198,18 @@ function App() {
           )}
 
           {!isLoading && session.state === 'category-selection' && (
-            <CategorySelector
-              categories={categories}
-              terms={terms}
-              onCategorySelect={handleCategorySelect}
-            />
+            <>
+              <CategorySelector
+                categories={categories}
+                terms={terms}
+                onCategorySelect={handleCategorySelect}
+              />
+              
+              {/* Show pronunciation info if there are issues */}
+              <div className="mt-6">
+                <PronunciationInfo autoShow={false} />
+              </div>
+            </>
           )}
 
           {!isLoading && session.state === 'studying' && session.category && (

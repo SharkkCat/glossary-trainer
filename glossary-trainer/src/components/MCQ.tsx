@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import type { MCQQuestion, MCQOption } from '../types';
+import { PronunciationIcon } from './PronunciationButton';
 
 interface MCQProps {
   question: MCQQuestion;
@@ -175,8 +176,13 @@ export default function MCQ({
         <div className="mb-6 p-4 bg-blue-50 border border-blue-200 rounded-lg">
           <div className="text-sm text-blue-800">
             <div className="font-semibold mb-2">Complete translation:</div>
-            <div className="mb-1">
-              <strong>Chinese:</strong> {question.term.chinese}
+            <div className="mb-1 flex items-center justify-center gap-2">
+              <span><strong>Chinese:</strong> {question.term.chinese}</span>
+              <PronunciationIcon 
+                text={question.term.chinese}
+                className="flex-shrink-0"
+                onError={(error) => console.warn('Pronunciation error:', error)}
+              />
             </div>
             <div className="mb-1">
               <strong>Pinyin:</strong> {question.term.pinyin}

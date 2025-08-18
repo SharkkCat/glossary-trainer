@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import type { Term } from '../types';
+import { PronunciationIcon } from './PronunciationButton';
 
 interface FlashcardProps {
   term: Term;
@@ -93,8 +94,15 @@ export default function Flashcard({
           {/* Back (Chinese translation) */}
           <div className="flashcard-face flashcard-back">
             <div className="h-80 flex flex-col justify-center items-center bg-blue-50 border-2 border-blue-200 rounded-xl shadow-lg cursor-pointer hover:shadow-xl transition-shadow duration-200">
-              <div className="text-4xl font-bold text-gray-900 mb-3">
-                {term.chinese}
+              <div className="flex items-center gap-3 mb-3">
+                <div className="text-4xl font-bold text-gray-900">
+                  {term.chinese}
+                </div>
+                <PronunciationIcon 
+                  text={term.chinese}
+                  className="flex-shrink-0"
+                  onError={(error) => console.warn('Pronunciation error:', error)}
+                />
               </div>
               <div className="text-lg text-gray-600 mb-2">
                 {term.pinyin}
