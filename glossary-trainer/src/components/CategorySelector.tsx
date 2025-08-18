@@ -1,6 +1,5 @@
 import type { Category, Term } from '../types';
 import { Card, CardContent } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
 
 interface CategorySelectorProps {
   categories: Category[];
@@ -45,7 +44,7 @@ export default function CategorySelector({ categories, terms, onCategorySelect }
                     {category.name}
                   </h3>
                   <p className="text-sm text-muted-foreground">
-                    {category.description || `Learn ${categoryTerms.length} essential terms`}
+                    Learn {categoryTerms.length} essential terms
                   </p>
                 </div>
               </CardContent>
