@@ -1,6 +1,9 @@
 import { useState } from 'react';
 import type { MCQQuestion, MCQOption } from '../types';
 import { PronunciationIcon } from './PronunciationButton';
+import { Card, CardContent } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
+import { Progress } from '@/components/ui/progress';
 
 interface MCQProps {
   question: MCQQuestion;
@@ -85,18 +88,18 @@ export default function MCQ({
     let baseClasses = "w-full p-4 text-left rounded-lg border-2 transition-all duration-200 ";
     
     if (!hasAnswered) {
-      baseClasses += "border-gray-200 hover:border-blue-300 hover:bg-blue-50 cursor-pointer ";
+      baseClasses += "border-border hover:border-primary hover:bg-accent cursor-pointer ";
     } else {
       if (optionIndex === selectedOption) {
         if (option.isCorrect) {
-          baseClasses += "border-green-500 bg-green-100 text-green-800 ";
+          baseClasses += "border-green-500 bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-300 ";
         } else {
-          baseClasses += "border-red-500 bg-red-100 text-red-800 ";
+          baseClasses += "border-red-500 bg-red-100 text-red-800 dark:bg-red-900/30 dark:text-red-300 ";
         }
       } else if (option.isCorrect) {
-        baseClasses += "border-green-500 bg-green-50 text-green-700 ";
+        baseClasses += "border-green-500 bg-green-50 text-green-700 dark:bg-green-900/20 dark:text-green-400 ";
       } else {
-        baseClasses += "border-gray-200 bg-gray-50 text-gray-500 cursor-not-allowed ";
+        baseClasses += "border-border bg-muted text-muted-foreground cursor-not-allowed ";
       }
     }
     
@@ -117,29 +120,31 @@ export default function MCQ({
   return (
     <div className="text-center" onKeyDown={handleKeyPress} tabIndex={0}>
       {/* Progress indicator */}
-      <div className="mb-6">
-        <div className="flex justify-between items-center mb-2">
-          <span className="text-sm text-gray-500">
+      <div className="mb-6 p-4 bg-muted/20 rounded-xl border border-border/30">
+        <div className="flex justify-between items-center mb-3">
+          <span className="text-sm text-foreground font-medium px-3 py-1 bg-purple-100 dark:bg-purple-900/30 rounded-full">
             Question {currentIndex + 1} of {totalCount}
           </span>
-          <span className="text-sm text-gray-500">
+          <span className="text-xs text-muted-foreground px-2 py-1 bg-background/50 rounded-md">
             Press 1-4 to select
           </span>
         </div>
-        <div className="w-full bg-gray-200 rounded-full h-2">
-          <div 
-            className="bg-purple-500 h-2 rounded-full transition-all duration-300"
-            style={{ width: `${((currentIndex + 1) / totalCount) * 100}%` }}
-          />
-        </div>
+        <Progress 
+          value={((currentIndex + 1) / totalCount) * 100} 
+          className="h-3 bg-muted/50 [&>div]:bg-purple-500"
+        />
       </div>
 
       {/* Question */}
       <div className="mb-8">
-        <h3 className="text-lg text-gray-600 mb-4">What is the Chinese translation of:</h3>
-        <div className="text-3xl font-bold text-gray-900 mb-6 p-6 bg-gray-50 rounded-xl border">
-          {question.term.term}
-        </div>
+        <h3 className="text-lg text-muted-foreground mb-4 px-4 py-2 bg-muted/20 rounded-lg text-center">What is the Chinese translation of:</h3>
+        <Card className="border-2 bg-gradient-to-br from-card to-muted/10 hover:shadow-lg transition-shadow">
+          <CardContent className="p-6">
+            <div className="text-3xl font-bold text-foreground px-4 py-3 bg-background/50 rounded-xl text-center">
+              {question.term.term}
+            </div>
+          </CardContent>
+        </Card>
       </div>
 
       {/* Options */}
@@ -173,60 +178,108 @@ export default function MCQ({
 
       {/* Explanation */}
       {showExplanation && (
-        <div className="mb-6 p-4 bg-blue-50 border border-blue-200 rounded-lg">
-          <div className="text-sm text-blue-800">
-            <div className="font-semibold mb-2">Complete translation:</div>
-            <div className="mb-1 flex items-center justify-center gap-2">
-              <span><strong>Chinese:</strong> {question.term.chinese}</span>
-              <PronunciationIcon 
-                text={question.term.chinese}
-                className="flex-shrink-0"
-                onError={(error) => console.warn('Pronunciation error:', error)}
-              />
-            </div>
-            <div className="mb-1">
-              <strong>Pinyin:</strong> {question.term.pinyin}
-            </div>
-            <div>
-              <strong>Definition:</strong> {question.term.definition}
-            </div>
-            {question.term.notes && (
-              <div className="mt-2 italic">
-                <strong>Notes:</strong> {question.term.notes}
+        <Card className="mb-6 bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-950/50 dark:to-blue-900/30 border-blue-200 dark:border-blue-800">
+          <CardContent className="p-5">
+            <div className="text-sm text-foreground">
+              <div className="font-semibold mb-3 text-center px-3 py-1 bg-blue-600 text-white rounded-full text-xs uppercase tracking-wide">💡 Complete Translation</div>
+              <div className="space-y-2">
+                <div className="flex items-center justify-center gap-2 px-3 py-2 bg-background/60 rounded-lg">
+                  <span><strong>Chinese:</strong> {question.term.chinese}</span>
+                  <PronunciationIcon 
+                    text={question.term.chinese}
+                    className="flex-shrink-0"
+                    onError={(error) => console.warn('Pronunciation error:', error)}
+                  />
+                </div>
+                <div className="px-3 py-2 bg-background/40 rounded-lg text-center">
+                  <strong>Pinyin:</strong> {question.term.pinyin}
+                </div>
+                <div className="px-3 py-2 bg-background/40 rounded-lg text-center">
+                  <strong>Definition:</strong> {question.term.definition}
+                </div>
+                {question.term.notes && (
+                  <div className="mt-3 italic px-3 py-2 bg-muted/40 rounded-lg text-center">
+                    <strong>Notes:</strong> {question.term.notes}
+                  </div>
+                )}
               </div>
-            )}
-          </div>
-        </div>
+            </div>
+          </CardContent>
+        </Card>
       )}
 
       {/* Navigation buttons */}
-      <div className="flex justify-between items-center">
-        <button
-          onClick={handlePrevious}
-          disabled={currentIndex === 0}
-          className="px-4 py-2 bg-gray-500 text-white rounded-lg hover:bg-gray-600 disabled:bg-gray-300 disabled:cursor-not-allowed transition-colors duration-200"
-        >
-          ← Previous
-        </button>
+      <div className="space-y-3">
+        {/* Mobile-first: Next button prominently displayed */}
+        <div className="block md:hidden">
+          {hasAnswered && (
+            <Button
+              onClick={handleNext}
+              variant="default"
+              size="lg"
+              className="w-full !bg-purple-600 hover:!bg-purple-700 !text-white font-semibold"
+            >
+              {currentIndex + 1 >= totalCount ? 'Finish Quiz' : 'Next Question →'}
+            </Button>
+          )}
+          {!hasAnswered && (
+            <div className="w-full py-3 text-center text-muted-foreground text-sm !bg-gray-100 dark:!bg-gray-800 rounded-lg border border-dashed">
+              Select an answer above to continue
+            </div>
+          )}
+        </div>
 
-        {hasAnswered && (
-          <button
-            onClick={handleNext}
-            className="px-6 py-2 bg-purple-500 text-white rounded-lg hover:bg-purple-600 transition-colors duration-200"
-          >
-            {currentIndex + 1 >= totalCount ? 'Finish Quiz' : 'Next Question →'}
-          </button>
-        )}
-
-        {!hasAnswered && (
-          <div className="px-6 py-2 text-gray-400">
-            Select an answer above
+        {/* Desktop layout */}
+        <div className="hidden md:block">
+          {/* Desktop: Next button prominently displayed */}
+          <div className="mb-3">
+            {hasAnswered && (
+              <Button
+                onClick={handleNext}
+                variant="default"
+                size="lg"
+                className="w-full !bg-purple-600 hover:!bg-purple-700 !text-white font-semibold"
+              >
+                {currentIndex + 1 >= totalCount ? 'Finish Quiz' : 'Next Question →'}
+              </Button>
+            )}
+            {!hasAnswered && (
+              <div className="w-full py-3 text-center text-muted-foreground text-sm !bg-gray-100 dark:!bg-gray-800 rounded-lg border border-dashed">
+                Select an answer above to continue
+              </div>
+            )}
           </div>
-        )}
+          
+          {/* Desktop: Secondary actions */}
+          <div className="flex justify-start">
+            <Button
+              onClick={handlePrevious}
+              disabled={currentIndex === 0}
+              variant="secondary"
+              size="default"
+            >
+              ← Previous
+            </Button>
+          </div>
+        </div>
+
+        {/* Mobile: Secondary actions */}
+        <div className="block md:hidden">
+          <div className="flex justify-start">
+            <Button
+              onClick={handlePrevious}
+              disabled={currentIndex === 0}
+              variant="secondary"
+              size="sm"
+            >
+              ← Previous
+            </Button>
+          </div>
+        </div>
       </div>
 
       {/* Keyboard hints */}
-      <div className="mt-4 text-xs text-gray-400">
+      <div className="mt-4 text-xs text-muted-foreground">
         {!hasAnswered ? '1-4 to select • ← → to navigate' : 'Enter or Space for next • ← for previous'}
       </div>
     </div>

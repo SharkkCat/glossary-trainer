@@ -1,6 +1,9 @@
 import { useState } from 'react';
 import type { Term } from '../types';
 import { PronunciationIcon } from './PronunciationButton';
+import { Card, CardContent } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
+import { Progress } from '@/components/ui/progress';
 
 interface FlashcardProps {
   term: Term;
@@ -55,102 +58,101 @@ export default function Flashcard({
 
   return (
     <div className="text-center" onKeyDown={handleKeyPress} tabIndex={0}>
-      {/* Progress indicator */}
-      <div className="mb-6">
-        <div className="flex justify-between items-center mb-2">
-          <span className="text-sm text-gray-500">
-            Card {currentIndex + 1} of {totalCount}
-          </span>
-          <span className="text-sm text-gray-500">
-            Press Space to flip
-          </span>
+      {/* Simplified progress indicator */}
+      <div className="mb-12 text-center">
+        <div className="text-sm !text-gray-500 dark:!text-gray-400 mb-3">
+          Card {currentIndex + 1} of {totalCount}
         </div>
-        <div className="w-full bg-gray-200 rounded-full h-2">
-          <div 
-            className="bg-blue-500 h-2 rounded-full transition-all duration-300"
-            style={{ width: `${((currentIndex + 1) / totalCount) * 100}%` }}
-          />
-        </div>
+        <Progress 
+          value={((currentIndex + 1) / totalCount) * 100} 
+          className="h-2 !bg-gray-200 dark:!bg-gray-700 rounded-full overflow-hidden max-w-xs mx-auto"
+        />
       </div>
 
       {/* Flashcard */}
-      <div className="relative mb-8">
+      <div className="relative mb-10">
         <div 
           className={`flashcard ${isFlipped ? 'flipped' : ''}`}
           onClick={handleFlip}
         >
           {/* Front (English term) */}
           <div className="flashcard-face flashcard-front">
-            <div className="h-80 flex flex-col justify-center items-center bg-white border-2 border-gray-200 rounded-xl shadow-lg cursor-pointer hover:shadow-xl transition-shadow duration-200">
-              <div className="text-3xl font-bold text-gray-900 mb-4">
-                {term.term}
-              </div>
-              <div className="text-sm text-gray-500 px-4">
-                Click to reveal translation
-              </div>
-            </div>
+            <Card className="h-96 cursor-pointer hover:shadow-xl transition-all duration-300 !border-0 !bg-white dark:!bg-gray-800 rounded-3xl shadow-lg">
+              <CardContent className="h-full flex flex-col justify-center items-center p-12">
+                <div className="text-5xl font-bold !text-gray-900 dark:!text-white text-center leading-tight">
+                  {term.term}
+                </div>
+              </CardContent>
+            </Card>
           </div>
 
           {/* Back (Chinese translation) */}
           <div className="flashcard-face flashcard-back">
-            <div className="h-80 flex flex-col justify-center items-center bg-blue-50 border-2 border-blue-200 rounded-xl shadow-lg cursor-pointer hover:shadow-xl transition-shadow duration-200">
-              <div className="flex items-center gap-3 mb-3">
-                <div className="text-4xl font-bold text-gray-900">
-                  {term.chinese}
+            <Card className="h-96 cursor-pointer hover:shadow-xl transition-all duration-300 !border-0 !bg-gradient-to-br !from-blue-50 !to-indigo-50 dark:!from-blue-900/20 dark:!to-indigo-900/20 rounded-3xl shadow-lg">
+              <CardContent className="h-full flex flex-col justify-center items-center p-12 space-y-6">
+                <div className="flex items-center gap-4">
+                  <div className="text-5xl font-bold !text-gray-900 dark:!text-white">
+                    {term.chinese}
+                  </div>
+                  <PronunciationIcon 
+                    text={term.chinese}
+                    className="flex-shrink-0"
+                    onError={(error) => console.warn('Pronunciation error:', error)}
+                  />
                 </div>
-                <PronunciationIcon 
-                  text={term.chinese}
-                  className="flex-shrink-0"
-                  onError={(error) => console.warn('Pronunciation error:', error)}
-                />
-              </div>
-              <div className="text-lg text-gray-600 mb-2">
-                {term.pinyin}
-              </div>
-              <div className="text-lg text-gray-800 px-6">
-                {term.definition}
-              </div>
-              {term.notes && (
-                <div className="text-sm text-gray-600 mt-3 px-6 italic">
-                  {term.notes}
+                <div className="text-xl !text-gray-600 dark:!text-gray-300">
+                  {term.pinyin}
                 </div>
-              )}
-            </div>
+                <div className="text-lg !text-gray-800 dark:!text-gray-200 text-center leading-relaxed max-w-md">
+                  {term.definition}
+                </div>
+                {term.notes && (
+                  <div className="text-sm !text-gray-600 dark:!text-gray-400 italic text-center max-w-md">
+                    {term.notes}
+                  </div>
+                )}
+              </CardContent>
+            </Card>
           </div>
         </div>
       </div>
 
-      {/* Navigation buttons */}
-      <div className="flex justify-between items-center">
-        <button
-          onClick={handlePrevious}
-          disabled={currentIndex === 0}
-          className="px-4 py-2 bg-gray-500 text-white rounded-lg hover:bg-gray-600 disabled:bg-gray-300 disabled:cursor-not-allowed transition-colors duration-200"
-        >
-          ← Previous
-        </button>
+      {/* Simplified navigation */}
+      <div className="mt-16 space-y-6">
+        {/* Primary action - Next button */}
+        <div>
+          <Button
+            onClick={handleNext}
+            variant="default"
+            size="lg"
+            className="w-full !bg-green-600 hover:!bg-green-700 !text-white font-semibold !h-14 text-lg rounded-2xl shadow-lg hover:shadow-xl transition-all duration-200"
+          >
+            {currentIndex + 1 >= totalCount ? 'Complete' : 'Next Card →'}
+          </Button>
+        </div>
 
-        <button
-          onClick={handleFlip}
-          className="px-6 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors duration-200"
-        >
-          {isFlipped ? 'Show English' : 'Show Chinese'}
-        </button>
+        {/* Secondary actions */}
+        <div className="flex justify-center items-center gap-6">
+          <Button
+            onClick={handlePrevious}
+            disabled={currentIndex === 0}
+            variant="ghost"
+            size="default"
+            className="!h-12 px-6 rounded-xl !text-gray-600 dark:!text-gray-400 hover:!text-gray-900 dark:hover:!text-white hover:!bg-gray-100 dark:hover:!bg-gray-700"
+          >
+            ← Previous
+          </Button>
 
-        <button
-          onClick={handleNext}
-          className="px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors duration-200"
-        >
-          {currentIndex + 1 >= totalCount ? 'Finish' : 'Next →'}
-        </button>
+          <Button
+            onClick={handleFlip}
+            variant="outline"
+            size="default"
+            className="!h-12 px-8 rounded-xl !border-2 !border-blue-200 dark:!border-blue-700 !text-blue-600 dark:!text-blue-400 hover:!bg-blue-50 dark:hover:!bg-blue-900/20"
+          >
+            Flip Card
+          </Button>
+        </div>
       </div>
-
-      {/* Keyboard hints */}
-      <div className="mt-4 text-xs text-gray-400">
-        ← → arrows to navigate • Space to flip • Enter for next
-      </div>
-
-
     </div>
   );
 }

@@ -8,6 +8,8 @@ import MCQ from './components/MCQ';
 import SessionComplete from './components/SessionComplete';
 import PronunciationInfo from './components/PronunciationInfo';
 import { shuffleTerms, generateMCQQuestions } from './utils/quiz';
+import { Card, CardContent } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
 
 function App() {
   const [session, setSession] = useState<SessionData>({
@@ -176,23 +178,24 @@ function App() {
   const currentQuestion = mcqQuestions[session.currentTermIndex];
 
   return (
-    <div className="min-h-screen bg-gray-50 p-2 sm:p-4">
+    <div className="min-h-screen !bg-blue-50 dark:!bg-gray-900 px-4 pt-6 pb-8 sm:px-6 sm:pt-8 sm:pb-12">
       <div className="max-w-2xl mx-auto">
-        <header className="text-center mb-6 sm:mb-8">
-          <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2">
+        <header className="text-center mb-8 sm:mb-12 p-6 sm:p-8 rounded-2xl !bg-white dark:!bg-gray-800 !border !border-blue-200 dark:!border-gray-700 shadow-lg">
+          <h1 className="text-3xl sm:text-4xl font-bold !text-gray-900 dark:!text-white mb-3 tracking-tight">
             📚 Glossary Trainer
           </h1>
-          <p className="text-sm sm:text-base text-gray-600">
+          <p className="text-base sm:text-lg !text-gray-600 dark:!text-gray-300 leading-relaxed">
             Master technical terms with flashcards and quizzes
           </p>
         </header>
 
-        <main className="bg-white rounded-lg shadow-md p-4 sm:p-6 min-h-[500px]">
+        <Card className="shadow-2xl !bg-white dark:!bg-gray-800 !border !border-gray-200 dark:!border-gray-700 rounded-2xl overflow-hidden">
+          <CardContent className="p-6 sm:p-8 min-h-[500px]">
           {isLoading && (
             <div className="flex items-center justify-center h-96">
               <div className="text-center">
-                <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-500 mx-auto mb-4"></div>
-                <p className="text-gray-600">Loading terms...</p>
+                <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary mx-auto mb-4"></div>
+                <p className="text-muted-foreground">Loading terms...</p>
               </div>
             </div>
           )}
@@ -214,26 +217,34 @@ function App() {
 
           {!isLoading && session.state === 'studying' && session.category && (
             <div>
-              {/* Mode switcher and back button */}
-              <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-6">
-                <button
+              {/* Simplified header */}
+              <div className="flex justify-between items-center mb-12">
+                <Button
                   onClick={handleNewCategory}
-                  className="px-3 py-2 text-gray-600 hover:text-gray-800 transition-colors duration-200 text-sm"
+                  variant="ghost"
+                  size="sm"
+                  className="!text-gray-500 dark:!text-gray-400 hover:!text-gray-700 dark:hover:!text-gray-200"
                 >
-                  ← Back to Categories
-                </button>
+                  ← Categories
+                </Button>
                 
-                <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4">
-                  <span className="text-sm text-gray-500 font-medium">
+                <div className="text-center">
+                  <div className="text-sm !text-gray-900 dark:!text-white font-medium">
                     {session.category.icon} {session.category.name}
-                  </span>
-                  <button
-                    onClick={handleModeSwitch}
-                    className="px-3 py-2 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 transition-colors duration-200 text-xs sm:text-sm"
-                  >
-                    Switch to {session.mode === 'flashcard' ? 'Quiz' : 'Flashcard'} Mode
-                  </button>
+                  </div>
+                  <div className="text-xs !text-gray-500 dark:!text-gray-400 mt-1">
+                    {session.mode === 'flashcard' ? 'Flashcard Mode' : 'Quiz Mode'}
+                  </div>
                 </div>
+                
+                <Button
+                  onClick={handleModeSwitch}
+                  variant="ghost"
+                  size="sm"
+                  className="!text-blue-600 dark:!text-blue-400 hover:!text-blue-800 dark:hover:!text-blue-200"
+                >
+                  Switch Mode
+                </Button>
               </div>
 
               {/* Study content */}
@@ -274,7 +285,8 @@ function App() {
               onSwitchMode={handleSwitchMode}
             />
           )}
-        </main>
+          </CardContent>
+        </Card>
       </div>
     </div>
   );
