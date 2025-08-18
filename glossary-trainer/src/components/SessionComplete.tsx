@@ -42,7 +42,7 @@ export default function SessionComplete({
 
   // Get performance color
   const getScoreColor = () => {
-    if (scorePercentage >= 80) return "text-green-600 dark:text-green-400";
+    if (scorePercentage >= 80) return "text-lime-600 dark:text-lime-400";
     if (scorePercentage >= 60) return "text-yellow-600 dark:text-yellow-400";
     return "text-red-600 dark:text-red-400";
   };
@@ -50,24 +50,24 @@ export default function SessionComplete({
   return (
     <div className="text-center">
       {/* Celebration header */}
-      <div className="mb-8 p-6 bg-gradient-to-br from-green-50 to-emerald-100 dark:from-green-950/30 dark:to-emerald-900/20 rounded-xl border border-green-200 dark:border-green-800">
-        <div className="text-6xl mb-4">🎉</div>
-        <h2 className="text-2xl font-bold text-foreground mb-2">
+      <div className="mb-8 p-6 bg-gradient-to-br from-lime-50 via-green-50 to-emerald-50 dark:from-lime-950/30 dark:via-green-950/30 dark:to-emerald-900/20 rounded-xl border border-lime-200 dark:border-lime-700 shadow-xl">
+        <div className="text-6xl mb-4 animate-bounce">🎉</div>
+        <h2 className="text-2xl font-bold bg-gradient-to-r from-lime-600 via-green-600 to-emerald-600 bg-clip-text text-transparent mb-2">
           Session Complete!
         </h2>
-        <p className="text-muted-foreground px-4 py-2 bg-background/40 rounded-lg">
+        <p className="text-gray-700 dark:text-gray-300 px-4 py-2 bg-white/60 dark:bg-gray-800/60 rounded-lg border border-lime-200/30 dark:border-lime-700/30 backdrop-blur-sm">
           {getEncouragementMessage()}
         </p>
       </div>
 
       {/* Category info */}
-      <Card className="mb-8 bg-gradient-to-br from-card to-muted/10 border-border/50">
+      <Card className="mb-8 bg-gradient-to-br from-white to-lime-50/30 dark:from-gray-800 dark:to-lime-900/10 border-lime-200/40 dark:border-lime-700/40">
         <CardContent className="p-6">
-          <div className="text-3xl mb-2 p-2 bg-background/40 rounded-xl w-fit mx-auto">{category.icon}</div>
-          <div className="font-semibold text-foreground mb-1 px-3 py-1 bg-background/30 rounded-lg text-center">
+          <div className="text-3xl mb-2 p-3 bg-gradient-to-br from-lime-100/50 to-green-100/50 dark:from-lime-900/30 dark:to-green-900/30 rounded-xl w-fit mx-auto border border-lime-200/30 dark:border-lime-700/30">{category.icon}</div>
+          <div className="font-semibold text-foreground mb-1 px-3 py-1 bg-white/60 dark:bg-gray-700/60 rounded-lg text-center border border-lime-200/20 dark:border-lime-700/20">
             {category.name}
           </div>
-          <div className="text-sm text-muted-foreground px-2 py-1 bg-muted/30 rounded-md text-center">
+          <div className="text-sm text-lime-600 dark:text-lime-400 px-2 py-1 bg-lime-50/50 dark:bg-lime-900/20 rounded-md text-center border border-lime-300/30 dark:border-lime-600/30">
             {mode === 'flashcard' ? 'Flashcard Mode' : 'Quiz Mode'}
           </div>
         </CardContent>
@@ -89,7 +89,7 @@ export default function SessionComplete({
           <Progress 
             value={scorePercentage} 
             className={`h-4 mb-4 ${
-              scorePercentage >= 80 ? '[&>div]:bg-green-500' :
+              scorePercentage >= 80 ? '[&>div]:bg-gradient-to-r [&>div]:from-lime-500 [&>div]:to-green-500' :
               scorePercentage >= 60 ? '[&>div]:bg-yellow-500' : '[&>div]:bg-red-500'
             }`}
           />
@@ -97,56 +97,101 @@ export default function SessionComplete({
       )}
 
       {/* Action buttons */}
-      <div className="space-y-4">
+      <div className="space-y-6">
         {/* Primary action - Try different mode */}
         <Button
           onClick={onSwitchMode}
-          className="w-full px-6 py-4 font-semibold"
+          variant="gradient"
+          className="w-full h-14 text-lg font-semibold"
           size="lg"
         >
           {mode === 'flashcard' ? 'Try Quiz Mode 🧠' : 'Try Flashcard Mode 📚'}
         </Button>
 
-        {/* Secondary actions */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <Button
-            onClick={onRestart}
-            className="px-4 py-3 bg-green-600 hover:bg-green-700 font-medium"
-            size="default"
-          >
-            🔄 Study Again
-          </Button>
+        {/* Quick Actions Grid */}
+        <div>
+          <h3 className="text-sm font-medium text-muted-foreground mb-4 text-center">Quick Actions</h3>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+            <Button
+              onClick={onRestart}
+              variant="outline"
+              className="h-12 flex-col gap-1 hover:bg-lime-50 hover:border-lime-300 dark:hover:bg-lime-900/20 dark:hover:border-lime-600"
+            >
+              <span className="text-lg">🔄</span>
+              <span className="text-xs">Restart</span>
+            </Button>
 
-          <Button
-            onClick={onNewCategory}
-            className="px-4 py-3 bg-purple-600 hover:bg-purple-700 font-medium"
-            size="default"
-          >
-            📚 New Category
-          </Button>
+            <Button
+              onClick={onNewCategory}
+              variant="outline"
+              className="h-12 flex-col gap-1 hover:bg-green-50 hover:border-green-300 dark:hover:bg-green-900/20 dark:hover:border-green-600"
+            >
+              <span className="text-lg">📚</span>
+              <span className="text-xs">Categories</span>
+            </Button>
+
+            <Button
+              onClick={() => onSwitchMode()}
+              variant="outline"
+              className="h-12 flex-col gap-1 hover:bg-emerald-50 hover:border-emerald-300 dark:hover:bg-emerald-900/20 dark:hover:border-emerald-600"
+            >
+              <span className="text-lg">{mode === 'flashcard' ? '🧠' : '📖'}</span>
+              <span className="text-xs">Switch</span>
+            </Button>
+
+            <Button
+              onClick={() => window.location.reload()}
+              variant="outline"
+              className="h-12 flex-col gap-1 hover:bg-yellow-50 hover:border-yellow-300 dark:hover:bg-yellow-900/20 dark:hover:border-yellow-600"
+            >
+              <span className="text-lg">🏠</span>
+              <span className="text-xs">Home</span>
+            </Button>
+          </div>
         </div>
       </div>
 
       {/* Study tips */}
-      <Card className="mt-8 bg-gradient-to-br from-amber-50 to-yellow-100 dark:from-amber-950/30 dark:to-yellow-900/20 border-amber-200 dark:border-amber-800">
-        <CardContent className="p-5">
-          <div className="text-sm text-foreground">
-            <div className="font-semibold mb-3 text-center px-3 py-1 bg-amber-600 text-white rounded-full text-xs uppercase tracking-wide">💡 Study Tips</div>
-            <ul className="text-left space-y-2">
-              {mode === 'flashcard' ? (
-                <>
-                  <li className="px-3 py-2 bg-background/40 rounded-lg">• Try the quiz mode to test your memory</li>
-                  <li className="px-3 py-2 bg-background/40 rounded-lg">• Review terms you found difficult</li>
-                  <li className="px-3 py-2 bg-background/40 rounded-lg">• Practice regularly for better retention</li>
-                </>
-              ) : (
-                <>
-                  <li className="px-3 py-2 bg-background/40 rounded-lg">• Use flashcards to reinforce learning</li>
-                  <li className="px-3 py-2 bg-background/40 rounded-lg">• Review incorrect answers carefully</li>
-                  <li className="px-3 py-2 bg-background/40 rounded-lg">• Focus on terms with lower scores</li>
-                </>
-              )}
-            </ul>
+      <Card className="mt-8 bg-gradient-to-br from-lime-50/50 to-green-50/50 dark:from-lime-950/20 dark:to-green-950/20 border-lime-200/30 dark:border-lime-700/30">
+        <CardContent className="p-6">
+          <div className="text-center mb-4">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-lime-500 to-green-500 text-white rounded-full text-sm font-medium">
+              <span>💡</span>
+              Study Tips
+            </div>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+            {mode === 'flashcard' ? (
+              <>
+                <div className="p-3 bg-white/60 dark:bg-gray-800/60 rounded-lg text-center border border-lime-200/30 dark:border-lime-700/30">
+                  <div className="text-lg mb-1">🧠</div>
+                  <div className="text-xs text-muted-foreground">Try quiz mode</div>
+                </div>
+                <div className="p-3 bg-white/60 dark:bg-gray-800/60 rounded-lg text-center border border-lime-200/30 dark:border-lime-700/30">
+                  <div className="text-lg mb-1">🔄</div>
+                  <div className="text-xs text-muted-foreground">Review difficult terms</div>
+                </div>
+                <div className="p-3 bg-white/60 dark:bg-gray-800/60 rounded-lg text-center border border-lime-200/30 dark:border-lime-700/30">
+                  <div className="text-lg mb-1">📅</div>
+                  <div className="text-xs text-muted-foreground">Practice regularly</div>
+                </div>
+              </>
+            ) : (
+              <>
+                <div className="p-3 bg-white/60 dark:bg-gray-800/60 rounded-lg text-center border border-lime-200/30 dark:border-lime-700/30">
+                  <div className="text-lg mb-1">📖</div>
+                  <div className="text-xs text-muted-foreground">Use flashcards</div>
+                </div>
+                <div className="p-3 bg-white/60 dark:bg-gray-800/60 rounded-lg text-center border border-lime-200/30 dark:border-lime-700/30">
+                  <div className="text-lg mb-1">❌</div>
+                  <div className="text-xs text-muted-foreground">Review mistakes</div>
+                </div>
+                <div className="p-3 bg-white/60 dark:bg-gray-800/60 rounded-lg text-center border border-lime-200/30 dark:border-lime-700/30">
+                  <div className="text-lg mb-1">🎯</div>
+                  <div className="text-xs text-muted-foreground">Focus on weak areas</div>
+                </div>
+              </>
+            )}
           </div>
         </CardContent>
       </Card>

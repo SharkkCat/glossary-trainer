@@ -10,27 +10,44 @@ interface CategorySelectorProps {
 
 export default function CategorySelector({ categories, terms, onCategorySelect }: CategorySelectorProps) {
   return (
-    <div>
-      <h2 className="text-xl font-semibold mb-6 text-foreground text-center px-4 py-2 bg-muted/20 rounded-xl">Choose a Category</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+    <div className="space-y-8">
+      <div className="text-center">
+        <h2 className="text-2xl font-bold bg-gradient-to-r from-lime-600 via-green-600 to-emerald-600 bg-clip-text text-transparent mb-2">Choose a Category</h2>
+        <p className="text-muted-foreground text-sm">Select a topic to start learning</p>
+      </div>
+      
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {categories.map((category) => {
           const categoryTerms = terms.filter(t => t.categoryId === category.id);
           return (
             <Card 
               key={category.id}
-              className="group cursor-pointer hover:shadow-xl hover:border-primary transition-all duration-300 hover:-translate-y-1 bg-gradient-to-br from-card to-muted/10 hover:from-accent/20 hover:to-muted/20 border-border/50"
+              className="group cursor-pointer hover:shadow-2xl hover:border-lime-300 dark:hover:border-lime-600 transition-all duration-300 hover:-translate-y-1 bg-white/80 dark:bg-gray-800/80 hover:bg-gradient-to-br hover:from-lime-50/80 hover:to-green-50/60 dark:hover:from-lime-900/20 dark:hover:to-green-900/15 border border-lime-200/30 dark:border-lime-700/30 backdrop-blur-sm"
               onClick={() => onCategorySelect(category, categoryTerms)}
             >
-              <CardContent className="p-6 text-left">
-                <div className="text-3xl mb-3 group-hover:scale-110 transition-transform duration-200 p-3 bg-background/40 rounded-xl w-fit">
-                  {category.icon}
+              <CardContent className="p-6">
+                <div className="flex items-start justify-between mb-4">
+                  <div className="text-2xl p-2 bg-gradient-to-br from-lime-100/50 to-green-100/50 dark:from-lime-900/30 dark:to-green-900/30 rounded-lg group-hover:scale-110 transition-transform duration-300">
+                    {category.icon}
+                  </div>
+                  <div className="text-right">
+                    <div className="text-2xl font-bold text-lime-600 dark:text-lime-400">
+                      {categoryTerms.length}
+                    </div>
+                    <div className="text-xs text-muted-foreground font-medium">
+                      terms
+                    </div>
+                  </div>
                 </div>
-                <div className="font-semibold text-foreground mb-2 text-sm leading-tight px-2 py-1 bg-background/30 rounded-lg">
-                  {category.name}
+                
+                <div className="space-y-1">
+                  <h3 className="font-semibold text-foreground text-base leading-tight">
+                    {category.name}
+                  </h3>
+                  <p className="text-sm text-muted-foreground">
+                    {category.description || `Learn ${categoryTerms.length} essential terms`}
+                  </p>
                 </div>
-                <Badge variant="secondary" className="text-xs bg-primary/10 text-primary hover:bg-primary/20">
-                  {categoryTerms.length} terms
-                </Badge>
               </CardContent>
             </Card>
           );
