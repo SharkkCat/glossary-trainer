@@ -1501,5 +1501,842 @@
     "pinyin": "ān péi",
     "definition": "安培 (ān péi)",
     "notes": "Current"
+  },
+  {
+    "id": "term_168",
+    "categoryId": "fsr_bluetooth_connectivity",
+    "term": "Bluetooth Low Energy (BLE)",
+    "chinese": "低功耗蓝牙",
+    "pinyin": "dī gōng hào lán yá",
+    "definition": "低功耗蓝牙 (dī gōng hào lán yá)",
+    "notes": "Wireless protocol"
+  },
+  {
+    "id": "term_169",
+    "categoryId": "fsr_bluetooth_connectivity",
+    "term": "Classic Bluetooth",
+    "chinese": "经典蓝牙",
+    "pinyin": "jīng diǎn lán yá",
+    "definition": "经典蓝牙 (jīng diǎn lán yá)",
+    "notes": "BR/EDR"
+  },
+  {
+    "id": "term_170",
+    "categoryId": "fsr_bluetooth_connectivity",
+    "term": "GATT",
+    "chinese": "通用属性协议",
+    "pinyin": "tōng yòng shǔ xìng xié yì",
+    "definition": "通用属性协议 (tōng yòng shǔ xìng xié yì)",
+    "notes": "Generic Attribute Profile"
+  },
+  {
+    "id": "term_171",
+    "categoryId": "fsr_bluetooth_connectivity",
+    "term": "GATT service",
+    "chinese": "GATT服务",
+    "pinyin": "GATT fú wù",
+    "definition": "GATT服务 (GATT fú wù)",
+    "notes": "BLE data service"
+  },
+  {
+    "id": "term_172",
+    "categoryId": "fsr_bluetooth_connectivity",
+    "term": "GATT characteristic",
+    "chinese": "GATT特征",
+    "pinyin": "GATT tè zhēng",
+    "definition": "GATT特征 (GATT tè zhēng)",
+    "notes": "BLE data attribute"
+  },
+  {
+    "id": "term_173",
+    "categoryId": "fsr_bluetooth_connectivity",
+    "term": "UUID",
+    "chinese": "通用唯一识别码",
+    "pinyin": "tōng yòng wéi yī shí bié mǎ",
+    "definition": "通用唯一识别码 (tōng yòng wéi yī shí bié mǎ)",
+    "notes": "Universally Unique Identifier"
+  },
+  {
+    "id": "term_174",
+    "categoryId": "fsr_bluetooth_connectivity",
+    "term": "WRITE",
+    "chinese": "写入",
+    "pinyin": "xiě rù",
+    "definition": "写入 (xiě rù)",
+    "notes": "GATT write operation"
+  },
+  {
+    "id": "term_175",
+    "categoryId": "fsr_bluetooth_connectivity",
+    "term": "READ",
+    "chinese": "读取",
+    "pinyin": "dú qǔ",
+    "definition": "读取 (dú qǔ)",
+    "notes": "GATT read operation"
+  },
+  {
+    "id": "term_176",
+    "categoryId": "fsr_bluetooth_connectivity",
+    "term": "NOTIFY",
+    "chinese": "通知",
+    "pinyin": "tōng zhī",
+    "definition": "通知 (tōng zhī)",
+    "notes": "GATT notification"
+  },
+  {
+    "id": "term_177",
+    "categoryId": "fsr_bluetooth_connectivity",
+    "term": "MTU",
+    "chinese": "最大传输单元",
+    "pinyin": "zuì dà chuán shū dān yuán",
+    "definition": "最大传输单元 (zuì dà chuán shū dān yuán)",
+    "notes": "Maximum Transmission Unit"
+  },
+  {
+    "id": "term_178",
+    "categoryId": "fsr_bluetooth_connectivity",
+    "term": "Pairing",
+    "chinese": "配对",
+    "pinyin": "peì duì",
+    "definition": "配对 (peì duì)",
+    "notes": "Device authentication"
+  },
+  {
+    "id": "term_179",
+    "categoryId": "fsr_bluetooth_connectivity",
+    "term": "Bonding",
+    "chinese": "绑定",
+    "pinyin": "bǎng dìng",
+    "definition": "绑定 (bǎng dìng)",
+    "notes": "Persistent pairing"
+  },
+  {
+    "id": "term_180",
+    "categoryId": "fsr_bluetooth_connectivity",
+    "term": "MAC address",
+    "chinese": "MAC地址",
+    "pinyin": "MAC dì zhǐ",
+    "definition": "MAC地址 (MAC dì zhǐ)",
+    "notes": "Hardware address"
+  },
+  {
+    "id": "term_181",
+    "categoryId": "fsr_bluetooth_connectivity",
+    "term": "HFP",
+    "chinese": "免提配置文件",
+    "pinyin": "miǎn tí pèi zhì wén jiàn",
+    "definition": "免提配置文件 (miǎn tí pèi zhì wén jiàn)",
+    "notes": "Hands-Free Profile"
+  },
+  {
+    "id": "term_182",
+    "categoryId": "fsr_bluetooth_connectivity",
+    "term": "A2DP",
+    "chinese": "高级音频分发配置文件",
+    "pinyin": "gāo jí yīn pín fēn fā pèi zhì wén jiàn",
+    "definition": "高级音频分发配置文件 (gāo jí yīn pín fēn fā pèi zhì wén jiàn)",
+    "notes": "Advanced Audio Distribution"
+  },
+  {
+    "id": "term_183",
+    "categoryId": "fsr_bluetooth_connectivity",
+    "term": "AVRCP",
+    "chinese": "音视频远程控制配置文件",
+    "pinyin": "yīn shì pín yuǎn chéng kòng zhì pèi zhì wén jiàn",
+    "definition": "音视频远程控制配置文件 (yīn shì pín yuǎn chéng kòng zhì pèi zhì wén jiàn)",
+    "notes": "Audio/Video Remote Control"
+  },
+  {
+    "id": "term_184",
+    "categoryId": "fsr_bluetooth_connectivity",
+    "term": "BluetoothGatt",
+    "chinese": "蓝牙GATT接口",
+    "pinyin": "lán yá GATT jiē kǒu",
+    "definition": "蓝牙GATT接口 (lán yá GATT jiē kǒu)",
+    "notes": "Android GATT API"
+  },
+  {
+    "id": "term_185",
+    "categoryId": "fsr_bluetooth_connectivity",
+    "term": "SSID",
+    "chinese": "网络名称",
+    "pinyin": "wǎng luò míng chēng",
+    "definition": "网络名称 (wǎng luò míng chēng)",
+    "notes": "Service Set Identifier"
+  },
+  {
+    "id": "term_186",
+    "categoryId": "fsr_bluetooth_connectivity",
+    "term": "Signal strength",
+    "chinese": "信号强度",
+    "pinyin": "xìn hào qiáng dù",
+    "definition": "信号强度 (xìn hào qiáng dù)",
+    "notes": "Connection quality"
+  },
+  {
+    "id": "term_187",
+    "categoryId": "fsr_processors_architecture",
+    "term": "BT MCU",
+    "chinese": "蓝牙微控制器",
+    "pinyin": "lán yá wēi kòng zhì qì",
+    "definition": "蓝牙微控制器 (lán yá wēi kòng zhì qì)",
+    "notes": "Bluetooth microcontroller"
+  },
+  {
+    "id": "term_188",
+    "categoryId": "fsr_processors_architecture",
+    "term": "AR1 chip",
+    "chinese": "AR1芯片",
+    "pinyin": "AR1 xīn piàn",
+    "definition": "AR1芯片 (AR1 xīn piàn)",
+    "notes": "Main processor chip"
+  },
+  {
+    "id": "term_189",
+    "categoryId": "fsr_processors_architecture",
+    "term": "Android 14 Go",
+    "chinese": "安卓14 Go版",
+    "pinyin": "ān zhuō 14 Go bǎn",
+    "definition": "安卓14 Go版 (ān zhuō 14 Go bǎn)",
+    "notes": "Lightweight Android"
+  },
+  {
+    "id": "term_190",
+    "categoryId": "fsr_processors_architecture",
+    "term": "Microcontroller (MCU)",
+    "chinese": "微控制器",
+    "pinyin": "wēi kòng zhì qì",
+    "definition": "微控制器 (wēi kòng zhì qì)",
+    "notes": "Embedded processor"
+  },
+  {
+    "id": "term_191",
+    "categoryId": "fsr_processors_architecture",
+    "term": "DSP",
+    "chinese": "数字信号处理器",
+    "pinyin": "shù zì xìn hào chǔ lǐ qì",
+    "definition": "数字信号处理器 (shù zì xìn hào chǔ lǐ qì)",
+    "notes": "Digital Signal Processor"
+  },
+  {
+    "id": "term_192",
+    "categoryId": "fsr_hardware_io",
+    "term": "GPIO",
+    "chinese": "通用输入输出",
+    "pinyin": "tōng yòng shū rù shū chū",
+    "definition": "通用输入输出 (tōng yòng shū rù shū chū)",
+    "notes": "General Purpose Input/Output"
+  },
+  {
+    "id": "term_193",
+    "categoryId": "fsr_hardware_io",
+    "term": "Interrupt",
+    "chinese": "中断",
+    "pinyin": "zhōng duàn",
+    "definition": "中断 (zhōng duàn)",
+    "notes": "Hardware signal"
+  },
+  {
+    "id": "term_194",
+    "categoryId": "fsr_hardware_io",
+    "term": "Hardware debouncing",
+    "chinese": "硬件消抖",
+    "pinyin": "yìng jiàn xiāo dǒu",
+    "definition": "硬件消抖 (yìng jiàn xiāo dǒu)",
+    "notes": "Button noise filtering"
+  },
+  {
+    "id": "term_195",
+    "categoryId": "fsr_hardware_io",
+    "term": "Capacitive touch bar",
+    "chinese": "电容式触控条",
+    "pinyin": "diàn róng shì chù kòng tiáo",
+    "definition": "电容式触控条 (diàn róng shì chù kòng tiáo)",
+    "notes": "Touch sensor"
+  },
+  {
+    "id": "term_196",
+    "categoryId": "fsr_hardware_io",
+    "term": "USB-C",
+    "chinese": "USB-C接口",
+    "pinyin": "USB-C jiē kǒu",
+    "definition": "USB-C接口 (USB-C jiē kǒu)",
+    "notes": "Universal connector"
+  },
+  {
+    "id": "term_197",
+    "categoryId": "fsr_hardware_io",
+    "term": "RGB LED",
+    "chinese": "RGB LED灯",
+    "pinyin": "RGB LED dēng",
+    "definition": "RGB LED灯 (RGB LED dēng)",
+    "notes": "Multi-color LED"
+  },
+  {
+    "id": "term_198",
+    "categoryId": "fsr_hardware_io",
+    "term": "Privacy LED",
+    "chinese": "隐私指示灯",
+    "pinyin": "yǐn sī zhǐ shì dēng",
+    "definition": "隐私指示灯 (yǐn sī zhǐ shì dēng)",
+    "notes": "Camera indicator"
+  },
+  {
+    "id": "term_199",
+    "categoryId": "fsr_display_system",
+    "term": "Waveguide display",
+    "chinese": "波导显示器",
+    "pinyin": "bō dǎo xiǎn shì qì",
+    "definition": "波导显示器 (bō dǎo xiǎn shì qì)",
+    "notes": "AR display"
+  },
+  {
+    "id": "term_200",
+    "categoryId": "fsr_display_system",
+    "term": "Refresh rate",
+    "chinese": "刷新率",
+    "pinyin": "shuā xīn lǜ",
+    "definition": "刷新率 (shuā xīn lǜ)",
+    "notes": "Display frequency"
+  },
+  {
+    "id": "term_201",
+    "categoryId": "fsr_display_system",
+    "term": "Frame buffer",
+    "chinese": "帧缓冲区",
+    "pinyin": "zhēn huǎn chōng qū",
+    "definition": "帧缓冲区 (zhēn huǎn chōng qū)",
+    "notes": "Display memory"
+  },
+  {
+    "id": "term_202",
+    "categoryId": "fsr_display_system",
+    "term": "Display driver",
+    "chinese": "显示驱动程序",
+    "pinyin": "xiǎn shì qū dòng chéng xù",
+    "definition": "显示驱动程序 (xiǎn shì qū dòng chéng xù)",
+    "notes": "Display control"
+  },
+  {
+    "id": "term_203",
+    "categoryId": "fsr_display_system",
+    "term": "HAL",
+    "chinese": "硬件抽象层",
+    "pinyin": "yìng jiàn chōu xiàng céng",
+    "definition": "硬件抽象层 (yìng jiàn chōu xiàng céng)",
+    "notes": "Hardware Abstraction Layer"
+  },
+  {
+    "id": "term_204",
+    "categoryId": "fsr_display_system",
+    "term": "HUD",
+    "chinese": "抬头显示",
+    "pinyin": "tái tóu xiǎn shì",
+    "definition": "抬头显示 (tái tóu xiǎn shì)",
+    "notes": "Heads-up display"
+  },
+  {
+    "id": "term_205",
+    "categoryId": "fsr_display_system",
+    "term": "Ambient light sensor",
+    "chinese": "环境光传感器",
+    "pinyin": "huán jìng guāng chuán gǎn qì",
+    "definition": "环境光传感器 (huán jìng guāng chuán gǎn qì)",
+    "notes": "Auto-brightness"
+  },
+  {
+    "id": "term_206",
+    "categoryId": "fsr_audio_system",
+    "term": "Microphone array",
+    "chinese": "麦克风阵列",
+    "pinyin": "mài kè fēng zhèn liè",
+    "definition": "麦克风阵列 (mài kè fēng zhèn liè)",
+    "notes": "Multi-mic system"
+  },
+  {
+    "id": "term_207",
+    "categoryId": "fsr_audio_system",
+    "term": "Beamforming",
+    "chinese": "波束成形",
+    "pinyin": "bō shù chéng xíng",
+    "definition": "波束成形 (bō shù chéng xíng)",
+    "notes": "Directional processing"
+  },
+  {
+    "id": "term_208",
+    "categoryId": "fsr_audio_system",
+    "term": "Audio codec",
+    "chinese": "音频编解码器",
+    "pinyin": "yīn pín biān jiě mǎ qì",
+    "definition": "音频编解码器 (yīn pín biān jiě mǎ qì)",
+    "notes": "Audio compression"
+  },
+  {
+    "id": "term_209",
+    "categoryId": "fsr_audio_system",
+    "term": "Noise cancellation",
+    "chinese": "噪音消除",
+    "pinyin": "zào yīn xiāo chú",
+    "definition": "噪音消除 (zào yīn xiāo chú)",
+    "notes": "Audio processing"
+  },
+  {
+    "id": "term_210",
+    "categoryId": "fsr_audio_system",
+    "term": "Echo cancellation",
+    "chinese": "回声消除",
+    "pinyin": "huí shēng xiāo chú",
+    "definition": "回声消除 (huí shēng xiāo chú)",
+    "notes": "Acoustic echo removal"
+  },
+  {
+    "id": "term_211",
+    "categoryId": "fsr_audio_system",
+    "term": "Voice Activity Detection (VAD)",
+    "chinese": "语音活动检测",
+    "pinyin": "yǔ yīn huó dòng jiǎn cè",
+    "definition": "语音活动检测 (yǔ yīn huó dòng jiǎn cè)",
+    "notes": "Speech detection"
+  },
+  {
+    "id": "term_212",
+    "categoryId": "fsr_audio_system",
+    "term": "Wake word detection",
+    "chinese": "唤醒词检测",
+    "pinyin": "huàn xǐng cí jiǎn cè",
+    "definition": "唤醒词检测 (huàn xǐng cí jiǎn cè)",
+    "notes": "Voice activation"
+  },
+  {
+    "id": "term_213",
+    "categoryId": "fsr_audio_system",
+    "term": "Sampling rate",
+    "chinese": "采样率",
+    "pinyin": "cǎi yàng lǜ",
+    "definition": "采样率 (cǎi yàng lǜ)",
+    "notes": "Audio frequency"
+  },
+  {
+    "id": "term_214",
+    "categoryId": "fsr_audio_system",
+    "term": "Audio ducking",
+    "chinese": "音频衰减",
+    "pinyin": "yīn pín shuāi jiǎn",
+    "definition": "音频衰减 (yīn pín shuāi jiǎn)",
+    "notes": "Volume reduction"
+  },
+  {
+    "id": "term_215",
+    "categoryId": "fsr_audio_system",
+    "term": "AudioRecord",
+    "chinese": "音频采集",
+    "pinyin": "yīn pín cǎi jí",
+    "definition": "音频采集 (yīn pín cǎi jí)",
+    "notes": "Recording API"
+  },
+  {
+    "id": "term_216",
+    "categoryId": "fsr_audio_system",
+    "term": "AudioTrack",
+    "chinese": "音频播放",
+    "pinyin": "yīn pín bō fàng",
+    "definition": "音频播放 (yīn pín bō fàng)",
+    "notes": "Playback API"
+  },
+  {
+    "id": "term_217",
+    "categoryId": "fsr_audio_system",
+    "term": "AudioManager",
+    "chinese": "音频管理器",
+    "pinyin": "yīn pín guǎn lǐ qì",
+    "definition": "音频管理器 (yīn pín guǎn lǐ qì)",
+    "notes": "System audio control"
+  },
+  {
+    "id": "term_218",
+    "categoryId": "fsr_audio_system",
+    "term": "MediaCodec",
+    "chinese": "媒体编解码器",
+    "pinyin": "méi tǐ biān jiě mǎ qì",
+    "definition": "媒体编解码器 (méi tǐ biān jiě mǎ qì)",
+    "notes": "Hardware codec"
+  },
+  {
+    "id": "term_219",
+    "categoryId": "fsr_power_management",
+    "term": "Battery Management System (BMS)",
+    "chinese": "电池管理系统",
+    "pinyin": "diàn chí guǎn lǐ xì tǒng",
+    "definition": "电池管理系统 (diàn chí guǎn lǐ xì tǒng)",
+    "notes": "Battery control"
+  },
+  {
+    "id": "term_220",
+    "categoryId": "fsr_power_management",
+    "term": "BatteryManager",
+    "chinese": "电池管理器",
+    "pinyin": "diàn chí guǎn lǐ qì",
+    "definition": "电池管理器 (diàn chí guǎn lǐ qì)",
+    "notes": "Android battery API"
+  },
+  {
+    "id": "term_221",
+    "categoryId": "fsr_power_management",
+    "term": "Cold Boot",
+    "chinese": "冷启动",
+    "pinyin": "lěng qǐ dòng",
+    "definition": "冷启动 (lěng qǐ dòng)",
+    "notes": "Full power-on"
+  },
+  {
+    "id": "term_222",
+    "categoryId": "fsr_power_management",
+    "term": "Deep Sleep",
+    "chinese": "深度睡眠",
+    "pinyin": "shēn dù shuì mián",
+    "definition": "深度睡眠 (shēn dù shuì mián)",
+    "notes": "Minimal power"
+  },
+  {
+    "id": "term_223",
+    "categoryId": "fsr_power_management",
+    "term": "Doze state",
+    "chinese": "打盹模式",
+    "pinyin": "dǎ dǔn mó shì",
+    "definition": "打盹模式 (dǎ dǔn mó shì)",
+    "notes": "Android power mode"
+  },
+  {
+    "id": "term_224",
+    "categoryId": "fsr_power_management",
+    "term": "Wake lock",
+    "chinese": "唤醒锁",
+    "pinyin": "huàn xǐng suǒ",
+    "definition": "唤醒锁 (huàn xǐng suǒ)",
+    "notes": "Prevent sleep"
+  },
+  {
+    "id": "term_225",
+    "categoryId": "fsr_power_management",
+    "term": "PowerManager",
+    "chinese": "电源管理器",
+    "pinyin": "diàn yuán guǎn lǐ qì",
+    "definition": "电源管理器 (diàn yuán guǎn lǐ qì)",
+    "notes": "Power control API"
+  },
+  {
+    "id": "term_226",
+    "categoryId": "fsr_power_management",
+    "term": "Thermal throttling",
+    "chinese": "温度限制",
+    "pinyin": "wēn dù xiàn zhì",
+    "definition": "温度限制 (wēn dù xiàn zhì)",
+    "notes": "Overheat protection"
+  },
+  {
+    "id": "term_227",
+    "categoryId": "fsr_power_management",
+    "term": "Power consumption",
+    "chinese": "功耗",
+    "pinyin": "gōng hào",
+    "definition": "功耗 (gōng hào)",
+    "notes": "Energy usage"
+  },
+  {
+    "id": "term_228",
+    "categoryId": "fsr_security_encryption",
+    "term": "Hardware Root of Trust",
+    "chinese": "硬件信任根",
+    "pinyin": "yìng jiàn xìn rèn gēn",
+    "definition": "硬件信任根 (yìng jiàn xìn rèn gēn)",
+    "notes": "Security foundation"
+  },
+  {
+    "id": "term_229",
+    "categoryId": "fsr_security_encryption",
+    "term": "TEE",
+    "chinese": "可信执行环境",
+    "pinyin": "kě xìn zhí xíng huán jìng",
+    "definition": "可信执行环境 (kě xìn zhí xíng huán jìng)",
+    "notes": "Trusted Execution Environment"
+  },
+  {
+    "id": "term_230",
+    "categoryId": "fsr_security_encryption",
+    "term": "Keystore",
+    "chinese": "密钥存储",
+    "pinyin": "mì yuè cún chǔ",
+    "definition": "密钥存储 (mì yuè cún chǔ)",
+    "notes": "Key management"
+  },
+  {
+    "id": "term_231",
+    "categoryId": "fsr_security_encryption",
+    "term": "Secure boot",
+    "chinese": "安全启动",
+    "pinyin": "ān quán qǐ dòng",
+    "definition": "安全启动 (ān quán qǐ dòng)",
+    "notes": "Boot verification"
+  },
+  {
+    "id": "term_232",
+    "categoryId": "fsr_security_encryption",
+    "term": "AES-256",
+    "chinese": "AES-256加密",
+    "pinyin": "AES-256 jiā mì",
+    "definition": "AES-256加密 (AES-256 jiā mì)",
+    "notes": "Advanced Encryption"
+  },
+  {
+    "id": "term_233",
+    "categoryId": "fsr_security_encryption",
+    "term": "TLS 1.3",
+    "chinese": "TLS 1.3协议",
+    "pinyin": "TLS 1.3 xié yì",
+    "definition": "TLS 1.3协议 (TLS 1.3 xié yì)",
+    "notes": "Transport Layer Security"
+  },
+  {
+    "id": "term_234",
+    "categoryId": "fsr_security_encryption",
+    "term": "Encryption",
+    "chinese": "加密",
+    "pinyin": "jiā mì",
+    "definition": "加密 (jiā mì)",
+    "notes": "Data protection"
+  },
+  {
+    "id": "term_235",
+    "categoryId": "fsr_firmware_ota",
+    "term": "Firmware",
+    "chinese": "固件",
+    "pinyin": "gù jiàn",
+    "definition": "固件 (gù jiàn)",
+    "notes": "Embedded software"
+  },
+  {
+    "id": "term_236",
+    "categoryId": "fsr_firmware_ota",
+    "term": "OTA update",
+    "chinese": "OTA更新",
+    "pinyin": "OTA gēng xīn",
+    "definition": "OTA更新 (OTA gēng xīn)",
+    "notes": "Over-the-air firmware update"
+  },
+  {
+    "id": "term_237",
+    "categoryId": "fsr_firmware_ota",
+    "term": "Bootloader",
+    "chinese": "引导程序",
+    "pinyin": "yǐn dǎo chéng xù",
+    "definition": "引导程序 (yǐn dǎo chéng xù)",
+    "notes": "Boot loader"
+  },
+  {
+    "id": "term_238",
+    "categoryId": "fsr_firmware_ota",
+    "term": "Firmware signature",
+    "chinese": "固件签名",
+    "pinyin": "gù jiàn qiān míng",
+    "definition": "固件签名 (gù jiàn qiān míng)",
+    "notes": "Authentication"
+  },
+  {
+    "id": "term_239",
+    "categoryId": "fsr_firmware_ota",
+    "term": "A/B partition system",
+    "chinese": "A/B分区系统",
+    "pinyin": "A/B fēn qū xì tǒng",
+    "definition": "A/B分区系统 (A/B fēn qū xì tǒng)",
+    "notes": "Dual partition"
+  },
+  {
+    "id": "term_240",
+    "categoryId": "fsr_firmware_ota",
+    "term": "Rollback support",
+    "chinese": "回滚支持",
+    "pinyin": "huí gǔn zhī chí",
+    "definition": "回滚支持 (huí gǔn zhī chí)",
+    "notes": "Version revert"
+  },
+  {
+    "id": "term_241",
+    "categoryId": "fsr_firmware_ota",
+    "term": "SHA-256",
+    "chinese": "SHA-256哈希",
+    "pinyin": "SHA-256 hā xī",
+    "definition": "SHA-256哈希 (SHA-256 hā xī)",
+    "notes": "Hash algorithm"
+  },
+  {
+    "id": "term_242",
+    "categoryId": "fsr_firmware_ota",
+    "term": "Checksum",
+    "chinese": "校验和",
+    "pinyin": "jiào yàn hé",
+    "definition": "校验和 (jiào yàn hé)",
+    "notes": "Data integrity"
+  },
+  {
+    "id": "term_243",
+    "categoryId": "fsr_android_apis",
+    "term": "SharedPreferences",
+    "chinese": "共享首选项",
+    "pinyin": "gòng xiǎng shǒu xuǎn xiàng",
+    "definition": "共享首选项 (gòng xiǎng shǒu xuǎn xiàng)",
+    "notes": "Android preferences"
+  },
+  {
+    "id": "term_244",
+    "categoryId": "fsr_android_apis",
+    "term": "ActivityManager",
+    "chinese": "活动管理器",
+    "pinyin": "huó dòng guǎn lǐ qì",
+    "definition": "活动管理器 (huó dòng guǎn lǐ qì)",
+    "notes": "Activity lifecycle"
+  },
+  {
+    "id": "term_245",
+    "categoryId": "fsr_android_apis",
+    "term": "ConnectivityManager",
+    "chinese": "连接管理器",
+    "pinyin": "lián jiē guǎn lǐ qì",
+    "definition": "连接管理器 (lián jiē guǎn lǐ qì)",
+    "notes": "Network status"
+  },
+  {
+    "id": "term_246",
+    "categoryId": "fsr_android_apis",
+    "term": "WifiManager",
+    "chinese": "WiFi管理器",
+    "pinyin": "WiFi guǎn lǐ qì",
+    "definition": "WiFi管理器 (WiFi guǎn lǐ qì)",
+    "notes": "WiFi control"
+  },
+  {
+    "id": "term_247",
+    "categoryId": "fsr_android_apis",
+    "term": "PackageManager",
+    "chinese": "包管理器",
+    "pinyin": "bāo guǎn lǐ qì",
+    "definition": "包管理器 (bāo guǎn lǐ qì)",
+    "notes": "App management"
+  },
+  {
+    "id": "term_248",
+    "categoryId": "fsr_android_apis",
+    "term": "JobScheduler",
+    "chinese": "任务调度器",
+    "pinyin": "rèn wù tiáo dù qì",
+    "definition": "任务调度器 (rèn wù tiáo dù qì)",
+    "notes": "Background tasks"
+  },
+  {
+    "id": "term_249",
+    "categoryId": "fsr_android_apis",
+    "term": "WorkManager",
+    "chinese": "工作管理器",
+    "pinyin": "gōng zuò guǎn lǐ qì",
+    "definition": "工作管理器 (gōng zuò guǎn lǐ qì)",
+    "notes": "Reliable scheduling"
+  },
+  {
+    "id": "term_250",
+    "categoryId": "fsr_android_apis",
+    "term": "SensorManager",
+    "chinese": "传感器管理器",
+    "pinyin": "chuán gǎn qì guǎn lǐ qì",
+    "definition": "传感器管理器 (chuán gǎn qì guǎn lǐ qì)",
+    "notes": "Android sensor API"
+  },
+  {
+    "id": "term_251",
+    "categoryId": "fsr_data_networking",
+    "term": "Payload",
+    "chinese": "负载",
+    "pinyin": "fù zài",
+    "definition": "负载 (fù zài)",
+    "notes": "Data packet"
+  },
+  {
+    "id": "term_252",
+    "categoryId": "fsr_data_networking",
+    "term": "JSON",
+    "chinese": "JSON格式",
+    "pinyin": "JSON gé shì",
+    "definition": "JSON格式 (JSON gé shì)",
+    "notes": "Data format"
+  },
+  {
+    "id": "term_253",
+    "categoryId": "fsr_data_networking",
+    "term": "File transfer",
+    "chinese": "文件传输",
+    "pinyin": "wén jiàn chuán shū",
+    "definition": "文件传输 (wén jiàn chuán shū)",
+    "notes": "Data transmission"
+  },
+  {
+    "id": "term_254",
+    "categoryId": "fsr_data_networking",
+    "term": "Throughput",
+    "chinese": "吞吐量",
+    "pinyin": "tūn tǔ liàng",
+    "definition": "吞吐量 (tūn tǔ liàng)",
+    "notes": "Data rate"
+  },
+  {
+    "id": "term_255",
+    "categoryId": "fsr_data_networking",
+    "term": "Latency",
+    "chinese": "延迟",
+    "pinyin": "yán chí",
+    "definition": "延迟 (yán chí)",
+    "notes": "Response time"
+  },
+  {
+    "id": "term_256",
+    "categoryId": "fsr_data_networking",
+    "term": "Bandwidth",
+    "chinese": "带宽",
+    "pinyin": "dài kuān",
+    "definition": "带宽 (dài kuān)",
+    "notes": "Network capacity"
+  },
+  {
+    "id": "term_257",
+    "categoryId": "fsr_data_networking",
+    "term": "Retry mechanism",
+    "chinese": "重试机制",
+    "pinyin": "chóng shì jī zhì",
+    "definition": "重试机制 (chóng shì jī zhì)",
+    "notes": "Failure recovery"
+  },
+  {
+    "id": "term_258",
+    "categoryId": "fsr_data_networking",
+    "term": "Exponential backoff",
+    "chinese": "指数退避",
+    "pinyin": "zhǐ shù tuì bì",
+    "definition": "指数退避 (zhǐ shù tuì bì)",
+    "notes": "Retry strategy"
+  },
+  {
+    "id": "term_259",
+    "categoryId": "fsr_data_networking",
+    "term": "HTTP/HTTPS",
+    "chinese": "HTTP/HTTPS协议",
+    "pinyin": "HTTP/HTTPS xié yì",
+    "definition": "HTTP/HTTPS协议 (HTTP/HTTPS xié yì)",
+    "notes": "Web protocol"
+  },
+  {
+    "id": "term_260",
+    "categoryId": "fsr_data_networking",
+    "term": "Rate limiting",
+    "chinese": "速率限制",
+    "pinyin": "sù lǜ xiàn zhì",
+    "definition": "速率限制 (sù lǜ xiàn zhì)",
+    "notes": "Flow control"
   }
 ]

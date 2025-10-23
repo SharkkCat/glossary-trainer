@@ -58,5 +58,55 @@
     "id": "units_measurements",
     "name": "Units & Measurements",
     "icon": "📏"
+  },
+  {
+    "id": "fsr_bluetooth_connectivity",
+    "name": "FSR: Bluetooth & Connectivity",
+    "icon": "📡"
+  },
+  {
+    "id": "fsr_processors_architecture",
+    "name": "FSR: Processors & Architecture",
+    "icon": "⚙️"
+  },
+  {
+    "id": "fsr_hardware_io",
+    "name": "FSR: Hardware Interfaces & I/O",
+    "icon": "🔌"
+  },
+  {
+    "id": "fsr_display_system",
+    "name": "FSR: Display System",
+    "icon": "🖥️"
+  },
+  {
+    "id": "fsr_audio_system",
+    "name": "FSR: Audio System",
+    "icon": "🎵"
+  },
+  {
+    "id": "fsr_power_management",
+    "name": "FSR: Power Management",
+    "icon": "🔋"
+  },
+  {
+    "id": "fsr_security_encryption",
+    "name": "FSR: Security & Encryption",
+    "icon": "🔒"
+  },
+  {
+    "id": "fsr_firmware_ota",
+    "name": "FSR: Firmware & OTA Updates",
+    "icon": "📦"
+  },
+  {
+    "id": "fsr_android_apis",
+    "name": "FSR: Android APIs & Services",
+    "icon": "🤖"
+  },
+  {
+    "id": "fsr_data_networking",
+    "name": "FSR: Data Transfer & Networking",
+    "icon": "🌐"
   }
 ]
